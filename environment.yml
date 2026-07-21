@@ -1,0 +1,12 @@
+# Environment for converting my_manuscripts/*.pdf -> Markdown (with inline figure renders).
+# Create:  conda env create -f environment.yml
+# Run:     conda run -n pdf2md python my_manuscripts/convert_pdfs.py <pdf_id>:<name> ...
+name: pdf2md
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - poppler        # provides pdftoppm / pdftotext used by convert_pdfs.py
+  - pip
+  - pip:
+      - pymupdf4llm==1.28.0   # pulls pymupdf, pymupdf-layout, tabulate
