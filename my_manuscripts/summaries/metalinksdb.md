@@ -1,0 +1,13 @@
+## MetalinksDB: a flexible and contextualizable resource of metabolite-protein interactions
+
+*Farr et al., Briefings in Bioinformatics (2024) · **Author role: CO-FIRST author (with E. Farr)***
+
+**Problem:** Cell-cell communication (CCC) is routinely inferred from transcriptomics for protein-protein (ligand-receptor) interactions, but metabolite-mediated intercellular signaling remains hard to study because prior-knowledge resources focused on metabolites are small, non-reproducible, non-extensible, and non-customizable.
+
+**Approach:** Using the BioCypher knowledge-graph assembly framework, the authors wrote reproducible, versioned adapters to integrate generalistic metabolite-protein resources (STITCH, HMDB, Recon3D, Human Metabolic Atlas, Rhea, IUPHAR Guide to Pharmacology, TransportDB) with curated metabolite-receptor databases (NeuronChat, CellPhoneDB, Cellinker, scConnect). STITCH's >20M chemical-protein interactions were filtered by receptor identity (catalytic/nuclear receptors, GPCRs, ion channels, transporters), interaction mode (activation/inhibition/binding), confidence cutoffs (tuned to curated-database distributions), and extracellular annotation. Nodes/edges carry disease, pathway, tissue, and cellular-location descriptors for context filtering.
+
+**Key contributions:** A metabolite-receptor resource an order of magnitude larger (~10,000 interactions) than existing databases, plus metabolic enzyme (producer/degrader) sets for >2900 metabolites and transporter directionality. Contextualization to disease/tissue/pathway. Two case studies: bulk multi-omic ccRCC (renal cancer) recovering ATP-purinergic/ENaC signaling hypotheses via limma differential statistics and decoupleR ULM pathway enrichment; and spatial transcriptomics of murine acute kidney injury (AKI) with LIANA+ (spatially-weighted cosine + NMF), recovering an HNF4A-fatty-acyl signature.
+
+**Data & tools:** Knowledge graph/adapters at https://github.com/biocypher/metalinks; figures/analysis at https://github.com/saezlab/MetalinksDB; web interface (streamlit + Neo4j + drugst.one) at https://metalinks.omnipathdb.org/; web code at https://github.com/saezlab/metalinks_web; Zenodo https://zenodo.org/records/10200150. Programmatic access via LIANA+ (https://liana-py.readthedocs.io/). Uses pypath/OmniPath, SCANPY, metaboliteIDmapping. AKI data GSE182939.
+
+**Relevance to future work:** Extends CCC inference from proteins to metabolites, complementing LIANA+ (also Daniel's). An agent building metabolite-mediated signaling, multi-omics CCC, or BioCypher-based knowledge graphs should treat this as the reference metabolite-protein resource.

@@ -1,0 +1,13 @@
+## Multicellular factor analysis of single-cell data for a tissue-centric understanding of disease
+
+*Ramirez Flores et al., eLife (2023) · **Author role: Contributing author (3rd)***
+
+**Problem:** Analysis of cross-condition single-cell atlases usually relies on cell-type-centric pairwise differential expression, treating each cell type independently and requiring predefined contrasts. This ignores the multicellular nature of disease, where coordinated gene expression changes span multiple cell types ("multicellular programs").
+
+**Approach:** The method repurposes group factor analysis as implemented in MOFA (multi-omics factor analysis) for a tissue-centric decomposition. Cross-condition single-cell data are transformed into a multi-view representation, where each view holds pseudobulk gene expression summarized per cell type per patient sample. MOFA infers a shared latent space whose factors are interpretable multicellular programs; view- and feature-level explained variance quantify each cell type's and gene's contribution. Because MOFA does not force views to share features and handles missing data, samples can partially miss cell-type views (unlike tensor methods such as scITD). Its group regularization enables joint modeling of independent studies (meta-analysis), and views can encode not only expression but cell-type compositions, spatial dependencies, and cell-communication scores.
+
+**Key contributions:** Applied to acute (myocardial infarction) and chronic human heart failure atlases plus a lupus atlas. Recovered multicellular programs of cardiac remodeling that were cell-state-independent, conserved across independent studies via joint group models, and mappable to spatial (10x Visium) and bulk transcriptomics. Demonstrated patient projection/classification (random forests), integration of structural views (compositions, MISTy spatial dependencies), and deconvolution of disease signals from bulk (ReHeaT) outperforming compositional-only signals.
+
+**Data & tools:** R package MOFAcellulaR (https://github.com/saezlab/MOFAcellulaR); Python implementation in LIANA (https://liana-py.readthedocs.io/en/latest/notebooks/mofacellular.html; Dimitrov, 2023). Builds on MOFA/MOFA+, MISTy, PROGENy, edgeR, SCDC; datasets from Kuppe, Chaffin, Reichart, Kang atlases.
+
+**Relevance to future work:** Establishes the pseudobulk multi-view / factor-analysis paradigm for sample-level, tissue-centric disease description and cross-cohort meta-analysis; the Python port ties it into Daniel's LIANA ecosystem, making it a reusable building block for multicellular and spatial integration tasks.

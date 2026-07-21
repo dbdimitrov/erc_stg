@@ -1,0 +1,13 @@
+## Comparison of methods and resources for cell-cell communication inference from single-cell RNA-Seq data
+
+*Dimitrov et al., Nature Communications (2022) · **Author role: FIRST author***
+
+**Problem:** Many computational tools infer cell-cell communication (CCC) from scRNA-seq, each pairing a prior-knowledge resource of intercellular interactions with a scoring method. The impact of the choice of resource and method on predictions was largely unknown, and no gold standard exists to benchmark CCC inference.
+
+**Approach:** Systematic comparison of 16 CCC resources and 7 methods plus their consensus, decoupling each method from its native resource so any method-resource combination can be run. Methods re-implemented/wrapped in a unified framework: CellPhoneDBv2 (permutation p-values, truncated mean), CellChat (law-of-mass-action probability), Connectome, NATMI (specificity edge weights), logFC Mean (iTALK-inspired), SingleCellSignalR (LRscore), Crosstalk scores (CytoTalk-inspired PEM/NST), and a Robust Rank Aggregation consensus. Applied across 6 scRNA-seq datasets (breast cancer subtypes, cord blood mononuclear cells, pancreatic islets, colorectal cancer). Evaluated against independent modalities: spatial colocalization (10x Visium via SPOTlight, seqFISH/merFISH via Squidpy), CytoSig cytokine activities (decoupleR mlm), and CITE-seq receptor protein abundance.
+
+**Key contributions:** Resources share common origins (KEGG, Reactome, STRING, Ramilowski/FANTOM5) with limited uniqueness (~10% unique interactions) and uneven pathway/tissue coverage biases. Both method and resource strongly affect predictions (median pairwise Jaccard ~0.08 across methods, ~0.12 across resources in top-1000). Methods are robust to subsampling but sensitive to cell-type mislabeling and resource swaps. Predictions are broadly coherent with cytokine activity, receptor abundance, and spatial adjacency (clearest in structured brain cortex).
+
+**Data & tools:** LIANA framework (https://github.com/saezlab/liana); analysis scripts (https://github.com/saezlab/ligrec_decouple); OmnipathR (https://github.com/saezlab/OmnipathR); modified NATMI and SingleCellSignalR_v1 forks (github.com/saezlab). Resources via OmniPath; CytoSig, Human Protein Atlas, DisGeNet, SignaLink, NetPath, CancerSEA, decoupleR. Zenodo: record/6531218.
+
+**Relevance to future work:** Foundational benchmark establishing that CCC predictions are method- and resource-dependent, motivating consensus scoring and multi-modal validation. LIANA is the base framework extended by all subsequent Dimitrov CCC work (LIANA+, ccc-protocols).

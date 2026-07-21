@@ -1,0 +1,13 @@
+## Integrating single-cell multi-omics and prior biological knowledge for a functional characterization of the immune system
+
+*Schäfer et al., Nature Immunology (2024) · **Author role: Contributing author (2nd)***
+
+**Problem:** Single-cell and spatial multi-omics yield rich molecular snapshots of immune cells, but merely accumulating data points does not advance immunological understanding. The field needs algorithms that transform raw high-dimensional data into human-interpretable, functionally meaningful representations and testable hypotheses.
+
+**Approach:** A review of methods that integrate scRNA-seq, paired scRNA+scATAC-seq, and spatial transcriptomics with prior biological knowledge (curated databases of pathways, TF–target regulons, ligand–receptor complexes). It is organized along two intertwined axes — intracellular processes (transcriptional regulation and signaling) and intercellular processes (cell–cell communication and spatial organization) — illustrated with cancer, aging, infection, and chronic-inflammation examples.
+
+**Key contributions:** A framework for replacing an uninterpretable ~20,000-dimensional expression vector with mechanistic representations: functional-module activity, TF activity, context-specific GRNs, signaling-pathway activity, and CCC events, computed at single-cell, cluster, or sample level. It rigorously catalogues assumptions and limitations — mRNA-vs-protein-activity correlation, the coverage-vs-accuracy trade-off in GRN/TF databases, research bias (>90% of gene-function literature covers <5,000 proteins), lack of context specificity, and absence of CCC ground-truth benchmarks — concluding that computational outputs are hypotheses requiring orthogonal experimental validation.
+
+**Data & tools:** Knowledge resources GO, KEGG, Reactome, MSigDB, DoRothEA/CollecTRI-style regulons, SCENIC+ motif collection, OmniPath. Methods including gene-set enrichment, decoupleR, PROGENy-style pathway footprints, cytokine signatures, ligand–receptor inference (LIANA-style), multicellular-program factorization (MOFA-based), spatially-constrained CCC, and scV(D)J repertoire analysis (Box 1). Cell-annotation and cell-ontology harmonization are treated as prerequisite steps.
+
+**Relevance to future work:** Directly reflects Daniel's core methodological toolkit (CCC inference, TF/pathway activity, knowledge-guided representations). An agent working on immune or knowledge-integration tasks should treat this as the map of available inference layers, their input requirements, and — critically — the assumption checklist and validation caveats that must accompany any conclusion drawn from these tools.
