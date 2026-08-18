@@ -10,7 +10,7 @@
 > and corresponding-author footnotes in each PDF.
 >
 > **Scholar profile** ([`dDujacgAAAAJ`](https://scholar.google.com/citations?user=dDujacgAAAAJ&hl=en)):
-> **3,876 citations · h-index 12 · i10-index 15.** Citation counts below are from Google Scholar
+> **4000+ citations · h-index 14 · i10-index 16.** Citation counts below are from Google Scholar
 > as of **2026-07-21** and drift upward over time.
 
 ---
@@ -23,7 +23,7 @@ The current flagship method: a graph-VAE that disentangles a cell's *intrinsic* 
 📄 [Full](my_manuscripts/markdown/cellina.md) · 🔎 [Brief](my_manuscripts/summaries/cellina.md)
 
 ### Interpretation, extrapolation and perturbation of single cells
-**CO-FIRST and CORRESPONDING author** (with S. Schrod; O. Stegle senior) · Nature Reviews Genetics 2025 · 11 citations
+**CO-FIRST and CORRESPONDING author** (with S. Schrod; O. Stegle senior) · Nature Reviews Genetics 2025 · 22 citations
 Review framing the shift from descriptive single-cell atlasing toward causal/mechanistic and perturbation-effect modelling — the conceptual backdrop for the current spatial-perturbation research.
 📄 [Full](my_manuscripts/markdown/single-cell-interpretation-perturbation.md) · 🔎 [Brief](my_manuscripts/summaries/single-cell-interpretation-perturbation.md)
 

@@ -60,8 +60,8 @@ Total citations **3,777**; **h-index 13**, **i10-index 16**. Trajectory 76 (2022
 
 ## 6. PI-readiness assets (foreground in CV)
 
-- **Supervision:** 5 PhD, 3 MSc, 2 BSc. Cleanest evidence: **Moeed first-author on Cellina** under the candidate's senior authorship; Atheer's merged `inflow-score` PR in liana-py (directing student work into a released codebase).
-- **Software adoption (rare, external, hard-to-fake):** LIANA (275 GitHub stars), LIANA+ (305 GitHub stars; PyPI ~300k, pull live at drafting), decoupleR (~471k PyPI; co-author — attribute honestly), OmniPath/MetalinksDB ecosystem. Foreground with retrieval dates.
+- **Supervision:** 5 PhD, 3 MSc, 2 BSc. Cleanest evidence: **Moeed first-author on Cellina** under the candidate's senior authorship; Atheer's merged `inflow-score` PR in liana-py (directing student work into a released codebase). Elyas under MetalinksDB; 
+- **Software adoption (rare, external, hard-to-fake):** LIANA (245 GitHub stars), LIANA+ (309 GitHub stars; PyPI >300k), decoupleR (~471k PyPI; co-author), OmniPath ecosystem. 
 
 ---
 
@@ -94,14 +94,6 @@ The trust argument answers the reception risk the Perspective itself documents �
 - **Disentanglement is not free (Locatello).** Cellina already uses supervised disentanglement as the inductive bias precisely because unsupervised factorisation is not identifiable — the standard ML-referee attack is pre-answered.
 - **OOD validation as the trust test.** The context-transfer protocol (held-out cell types / rewired domains) is already the evaluation, with a principled failure mode.
 - **Prior-knowledge circularity.** The Perspective already documents priors' bias toward well-studied pathways and that modules often capture indirect effects — awareness is on record.
-
-### Still to resolve for the ERC
-
-1. **Extend the estimand** from Cellina's spatial-neighbourhood setting to general CCC — state the interventional quantity and assumptions precisely at the new scope.
-2. **Non-circular ground truth (Aim 1):** triangulate priors against orthogonal/interventional evidence; include ≥1 prior-free held-out axis.
-3. **LLM/RAG ground truth:** benchmark the extractor or cut it — the one remaining place fashionable ML sits inside the core.
-4. **Novelty delta:** one crisp sentence naming competitors (GEARS, CPA/chemCPA, scGen, MintFlow, SIMVI, SpatialProp, Celcomen) and the specific new contribution that **starts where Cellina ends** (CCC-axis counterfactuals with direction, across regimes; identifiability).
-5. **Experimental anchor + graceful degradation:** secure the prospective validation (§11); state the win if full identification fails — better, honestly-benchmarked OOD predictions + a reusable causal-CCC benchmark resource.
 
 ## 11. Actions
 
