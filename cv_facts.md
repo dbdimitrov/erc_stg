@@ -25,7 +25,7 @@ Education: MSc Bioinformatics, Glasgow (2018–2019, distinction); BSc (Hons) Ce
 
 ## 3. Invited talks & seminars
 
-- **Invited Seminar, VIB Center for Inflammation Research (Ghent), May 2026** — "The Microenvironment Matters: From Cell-Cell Communication to Neighbour-driven Signalling." *[fill: host PI]*
+- **Invited Seminar, VIB Center for Inflammation Research (Ghent), May 2026** — "The Microenvironment Matters: From Cell-Cell Communication to Neighbour-driven Signalling." *[fill: host PI]* *[confirm exact date: the seminar deck is filenamed 30.04.2026]*
 - **Invited talk, MOPITAS symposium "Unveiling the Spatial Multi-OMICS Frontier: from algorithm to application", University of Southern Denmark (SDU)**, late 2024 (reported Jan 2025) — "Cell-cell communication in single-cell, spatial, and multi-omics data." One event: the CV's "MOPITAS symposium 2024" and the reported symposium are the same SDU series (confirmed 2026-08-22).
 - **GAF (Genome Architecture and Function) Summer School & Workshop, Sofia, July 2025** — "Modelling Cell-Cell Communication using Single-cell and Spatial Transcriptomics Data" (summer-school invited faculty talk).
 
