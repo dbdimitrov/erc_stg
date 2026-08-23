@@ -8,7 +8,7 @@
 
 ## 1. Core dates & eligibility
 
-- **PhD:** Computational Biology, Heidelberg University, Sept 2020 – **June 2024** (title displayed as Dr.-Ing. in reporting systems). ERC StG window (2–7 yr post-PhD): **2026–2031** — the 2028 call sits comfortably inside. AITHYRA-type "postdoc / group started <3 yr ago" criteria: eligible.
+- **PhD:** Computational Biology, Heidelberg University, Sept 2020 – **June 2024** (title displayed as Dr.-Ing. in reporting systems). ERC StG window (PhD 2–7 yr before 1 Jan of the call year): **calls 2027–2031** — *not* 2026 (only ~1.5 yr by 1 Jan 2026); the 2028 call sits comfortably inside, with three further attempts (2029–2031). *(Corrected 2026-08-22 — an earlier version said 2026–2031.)* AITHYRA-type "postdoc / group started <3 yr ago" criteria: eligible.
 - **DOB:** 04.10.1994 (Varna, BG). Based in Schwetzingen, DE.
 
 ## 2. Experience timeline (compact)
@@ -68,4 +68,4 @@ Education: MSc Bioinformatics, Glasgow (2018–2019, distinction); BSc (Hons) Ce
 2. Oliver Stegle (postdoc supervisor; Interim Head of AI, EMBL & DKFZ) — oliver.stegle@embl.de
 3. Alberto Valdeolivas (collaborator; Senior Scientist, Roche Basel) — the independent-external slot (adoption/collaboration witness).
 
-*This trio already matches the three-referee shape AITHYRA-type calls ask for.*
+*This trio already matches the three-referee shape AITHYRA-type calls ask for. **Per-application override (2026-08-22):** for the AITHYRA package the third slot is **Yvan Saeys** (VIB–UGent; funded CZI collaboration partner) — a simulated search committee flagged that Valdeolivas, as a Saez-lab alumnus, makes the trio read as one Heidelberg network plus Stegle; Valdeolivas stays available as an optional fourth (industry-adoption witness). Align the generic CV's reference list per application.*
