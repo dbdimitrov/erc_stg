@@ -10,7 +10,7 @@ Sole first author: I set up the LIANA framework, performed the comparisons and e
 
 **2. Dimitrov D, et al. LIANA+ provides an all-in-one framework for cell–cell communication inference. *Nature Cell Biology* 26, 1613–1622 (2024). 300 citations.**
 
-Sole first author; I co-conceived the project, developed the software (liana-py), carried out the case studies, and drafted the manuscript. LIANA+ is the field's standard framework for inferring inter- and intracellular signalling from single-cell, spatial and multi-omics data across conditions, downloaded more than 300,000 times and independently adopted across the scverse ecosystem. It is the platform in which my group's models will ship, giving every new method an immediate route to thousands of users.
+Sole first author; I co-conceived the project, developed the software (liana-py), carried out the case studies, and drafted the manuscript. LIANA+ is the field's standard framework for inferring inter- and intracellular signalling from single-cell, spatial and multi-omics data across conditions, downloaded more than 300,000 times and independently adopted across the scverse ecosystem.
 
 ---
 

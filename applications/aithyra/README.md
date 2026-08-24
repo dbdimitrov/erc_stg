@@ -1,6 +1,6 @@
 # AITHYRA AI/ML Starting PI — application package
 
-*Target: the **next** AI/ML Starting PI round (expected ~spring 2027 — the last round closed 30 April 2026 and is in review). Submission: application@aithyra.at, subject line "AITHYRA AI/ML PI". Posting: [aithyra.at — Become an AI/ML Starting Principal Investigator](https://aithyra.at/about/open-positions/become-an-ai-ml-starting-principal-investigator-at-aithyra). Offer terms: €700k/year, 5+4 years, rolling tenure possible after year nine.*
+*Target: the **next** AI/ML Starting PI round. **No next-round date is announced anywhere (verified vs aithyra.at 2026-08-23)** — "~spring 2027" is our working assumption from cadence (last round closed 30 Apr 2026, hearings 1–2 June, status "review process started" as of Aug 2026) and remaining capacity (9 of ~10–15 planned groups), nothing more. Watch for: (a) hire announcements from the 2026 round (reveals cadence + remaining slots), (b) the posting reopening with a new deadline. A standing **"Proactive Application – Join AITHYRA"** channel exists on the open-positions page — an any-time route, best used only once KIARA is public and an ML-venue submission exists. Submission: application@aithyra.at, subject line "AITHYRA AI/ML PI". Posting: [aithyra.at — Become an AI/ML Starting Principal Investigator](https://aithyra.at/about/open-positions/become-an-ai-ml-starting-principal-investigator-at-aithyra). Offer terms: €700k/year, 5+4 years, rolling tenure possible after year nine.*
 
 ## Package map (posting requirement → file)
 
