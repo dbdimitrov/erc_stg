@@ -9,6 +9,7 @@
 - **Position:** Postdoc, Oliver Stegle lab — joint **DKFZ Heidelberg (Division B260)** / **EMBL** affiliation. Purely computational.
 - **One-line identity:** Built and maintains the descriptive infrastructure and the reference benchmark the cell–cell communication (CCC) field uses; now leading its shift from descriptive to causal models.
 - **Citation trajectory:** 76 (2022) → 289 → 826 → 1,458 (2025) → 1,094 (H1 2026). Steep and rising.
+- Experience in supervising > 10 MSc and PhD students (5 students currently)
 
 ### Key numbers (dated — refresh before each application)
 
@@ -50,13 +51,20 @@ Earlier and smaller works (BingleSeq, IgA-nephropathy AI perspective, RIDDEN, ma
 
 ### Forthcoming (state honestly as preprints / in preparation)
 
-1. **LIANA++** (multimodal CCC — spatial, multiome) — last & sole corresponding author.
-2. **KIARA** — cell-type/niche-specific perturbation-effect modelling.
-3. **Cellina** — preprint available; last + co-corresponding; under venue consideration.
+1. **LIANA++** (multimodal CCC — spatial, multiome) — last & sole corresponding author (student lead: Atheer Alsayah).
+2. **KIARA** — cell-type/niche-specific perturbation-effect modelling (student lead: Johnly Joshy).
+3. **Cellina** — preprint available; last + co-corresponding; under venue consideration (first author: Moeed; imaging extension: David Spiljak).
+4. **EHRx** — PRS × interpretable-factor enrichment on UK Biobank genetic + EHR data (student lead: Rama Abdulhamid; candidate's concept).
 
 ## 3. PI-readiness
 
-- **Supervision:** 5 PhD, 3 MSc, 2 BSc. Cleanest evidence: **Moeed first-author on Cellina** under the candidate's senior authorship; Atheer's merged `inflow-score` PR in liana-py (directing student work into a released codebase); Elyas on MetalinksDB (co-first outcome for the student's project).
+- **Supervision:** 5 PhD, 3 MSc, 2 BSc. **Named ongoing student projects (candidate supervising):**
+  - **Rama Abdulhamid — EHRx:** PRS (polygenic risk score) enrichment against interpretable/SAE factors to surface genetic associations tied to EHR-derived comorbidity patterns in **UK Biobank** (genetic + clinical/phenotypic integration; candidate's concept). *Covers the genetics×clinical required qual for industry translational roles.*
+  - **Atheer Alsayah — LIANA++:** extending LIANA+ to single-cell technologies (multimodal CCC); merged `inflow-score` PR in liana-py (student work directed into a released codebase).
+  - **Johnly Joshy — KIARA:** cell-type/niche-specific perturbation-effect modelling.
+  - **David Spiljak — Cellina→imaging:** extending Cellina to images via foundational pathology models.
+  - Completed/publication-track: **Moeed — first author on Cellina** under the candidate's senior authorship; **Elyas — co-first on MetalinksDB**.
+  - Cleanest leadership evidence: conceiving projects, directing student work into released codebases, and taking students to (co-)first authorship.
 - **Software adoption (rare, external, hard-to-fake):** LIANA / liana-py, decoupler, OmniPath ecosystem, MetalinksDB — numbers in §1 table.
 - **Community:** Open Problems in Single-Cell Analysis — CCC task contributor; Single-cell Best Practices consortium author.
 
