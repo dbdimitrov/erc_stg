@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.26)  30 AUG 2026 18:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.26)  30 AUG 2026 19:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -467,13 +467,13 @@ Package rerunfilecheck Info: File `DanielDimitrov_CoverLetter.out' has not chang
 Here is how much of TeX's memory you used:
  13261 strings out of 467525
  231125 string characters out of 5418982
- 643491 words of memory out of 5000000
+ 640491 words of memory out of 5000000
  42033 multiletter control sequences out of 15000+600000
  686994 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,84p,1162b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,84p,1174b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/adobe/sourcesans/SourceSans3-Bold.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/adobe/sourcesans/SourceSans3-It.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/adobe/sourcesans/SourceSans3-Regular.pfb>
-Output written on DanielDimitrov_CoverLetter.pdf (1 page, 246601 bytes).
+Output written on DanielDimitrov_CoverLetter.pdf (1 page, 245998 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream

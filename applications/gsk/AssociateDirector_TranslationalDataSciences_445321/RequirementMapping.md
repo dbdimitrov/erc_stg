@@ -65,5 +65,10 @@ Numbers current as of 2026-08-29; refresh if submitting later.*
   scrutiny; "hands-on genetics" would not.
 - **Ghent is 2 months** (May–Jun 2022), so it is cited as collaborative work, not a posting.
   The sustained CKD credential is the MSCA STRATEGY-CKD fellowship, which ran 2020–2024.
-- **Download figures are split deliberately:** 300k is `liana-py` (yours); 470k is `decoupleR`
-  (co-authored). Do not re-combine into "600k+ of my software".
+- **Download figures — two scopes, keep them distinct** (user-clarified 2026-08-30):
+  - *Tool-specific claims:* 300k is **LIANA+ alone** (`liana-py`, yours). Never attach a
+    portfolio-wide total to a single tool.
+  - *Portfolio claim:* **1,000,000+** across everything he builds **and co-develops** — LIANA (R),
+    `liana-py`, `decoupler` (R) and `decoupler-py`. Only ever stated with the "build and
+    co-develop" scoping, so the co-authored share is visible. `dossier.md:22,24` still records only
+    the mid-2026 per-package snapshots (>300k, ~471k); refresh those before quoting the total again.
