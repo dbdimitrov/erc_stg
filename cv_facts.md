@@ -26,14 +26,14 @@ Education: MSc Bioinformatics, Glasgow (2018–2019, distinction); BSc (Hons) Ce
 ## 3. Invited talks & seminars
 
 - **Invited Seminar, VIB Center for Inflammation Research (Ghent), May 2026** — "The Microenvironment Matters: From Cell-Cell Communication to Neighbour-driven Signalling." *[fill: host PI]* *[confirm exact date: the seminar deck is filenamed 30.04.2026]*
-- **Invited talk, MOPITAS symposium "Unveiling the Spatial Multi-OMICS Frontier: from algorithm to application", University of Southern Denmark (SDU)**, late 2024 (reported Jan 2025) — "Cell-cell communication in single-cell, spatial, and multi-omics data." One event: the CV's "MOPITAS symposium 2024" and the reported symposium are the same SDU series (confirmed 2026-08-22).
+- **Invited talk, MOPITAS symposium "Unveiling the Spatial Multi-OMICS Frontier: from algorithm to application", University of Southern Denmark (SDU)**, **2025** (user-corrected 2026-08-30; previously recorded as "late 2024, reported Jan 2025" and listed on the CV as 2024) — "Cell-cell communication in single-cell, spatial, and multi-omics data." One event: this and the reported symposium are the same SDU series (confirmed 2026-08-22).
 - **GAF (Genome Architecture and Function) Summer School & Workshop, Sofia, July 2025** — "Modelling Cell-Cell Communication using Single-cell and Spatial Transcriptomics Data" (summer-school invited faculty talk).
+- **Invited talk, AI & Biology @ EMBL 2026 (EMBL Heidelberg, January 2026)** — "Knowledge-informed Disentanglement of Perturbation and Microenvironmental Signals in Spatial Omics Data" (**= KIARA**, presented before preprint). *User-corrected 2026-08-30: this was an invited talk; previously recorded here as "selected — do not label invited".*
+- **Invited talk, VIB Spatial Omics 2024** — "LIANA+: an all-in-one framework for cell–cell communication inference." *User-corrected 2026-08-30: invited; previously recorded as a short talk.*
 
 ## 4. Conference & institutional talks (selected)
 
-- **AI & Biology @ EMBL 2026 (EMBL Heidelberg, January 2026)** — selected talk — "Knowledge-informed Disentanglement of Perturbation and Microenvironmental Signals in Spatial Omics Data" (**= KIARA**, presented before preprint). Do not label invited.
 - **AI Seminar @ EMBL (Heidelberg, May 2026)** — institutional seminar series — "The Microenvironment Matters: From in silico Perturbations to Context-specific Signalling."
-- Short talk, VIB Spatial Omics 2024 — "LIANA+: an all-in-one framework for cell–cell communication inference."
 - Short talk, ISMB/ECCB 2021 — "Comparison of Resources and Methods to infer Cell-Cell Communication."
 
 *Chalk-talk note: the two 2026 "Microenvironment Matters" talks + the KIARA talk are the current job-talk material — titles already field-tested at EMBL and VIB.*

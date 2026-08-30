@@ -49,6 +49,43 @@ evidence existed but was invisible to a recruiter skim. That was the highest-lev
 
 - **Seniority.** GSK posted Principal Scientist ×2 (446240, 446659) and Director (445320) in the
   same family. AD sits mid-ladder at ~2 years post-PhD. User chose to target AD only.
-- **Location.** User will not relocate to the UK. Posting body says "based in the United Kingdom"
-  but carries a Germany salary block (EUR 82,500–137,500), implying a continental site among the
-  three listed. **Unverified — must be confirmed on the live posting.**
+- **Location — RESOLVED 2026-08-30.** The application form offers a choice of 3 sites, one being
+  **Heidelberg**; the Stevenage/UK language applies only to candidates choosing Stevenage. Not a
+  risk. (Public posting page went dark ~3 days before the stated 2 Sep close, but the started
+  draft still accepts submission.)
+
+## Em-dash / case / quality-wording pass (2026-08-30)
+
+- Removed every `---` em-dash from the rendered CV: replaced with commas (Stegle/EHRx bullets,
+  Education degree classifications, Supervision mentoring bullet), colons (headline, patient-cohorts
+  bullet), or parentheses (Zeller/Glorieux/Experian/Earlier one-line roles, CZI grant); summary
+  sentence restructured to avoid the parenthetical entirely. All `--` en-dashes (date ranges,
+  `cell--cell`) left untouched.
+- LIANA bullet re-worded to "delivered as reproducible, production-quality software", deliberately
+  mirroring the job ad's basic qualification "delivering reproducible, production-quality analysis".
+- Engineering sidebar line case-standardized: Git, continuous integration, unit testing, Conda,
+  Docker, Agile development (brands capitalized, generic practices lowercase).
+- `BioConductor` corrected to official spelling `Bioconductor`; Consortia sidebar aligned with
+  page 2: "Open Problems in Single-Cell Analysis" (capital C) in both.
+- Three `% ----------` comment dividers in the preamble converted to `% ==========` so a `---` grep
+  of the file is clean (non-rendered, cosmetic only).
+- Recompiled twice with xelatex: no errors, output still exactly 2 pages.
+
+## Bolding / talks pass (2026-08-30)
+
+- **Bolding policy**: framework names unbolded in Experience (EHRx); explanatory keywords bolded
+  instead — *cell-cell communication*, *300,000+ installs*, *production-quality software*,
+  *candidate targets*. Page-2 Supervision keeps all four project names bolded (internally
+  consistent list). "Earlier:" now bold.
+- **Talks merged into one list**: dropped GAF Sofia 2025 and AI Seminar @ EMBL 2026 (user call,
+  overrides the 2026-08-22 "focus items" note in cv_facts.md); "(invited)" tagged on VIB Ghent 2026
+  and MOPITAS only — AI & Biology @ EMBL and VIB Spatial Omics stay untagged per the dossier's
+  "do not label invited" rule. MOPITAS year corrected 2024 → 2025 (cv_facts.md updated).
+- User manual edits taken as base: publications header (h-index removed), Supervision reworded to
+  "co-conceived and mentor", co-organised line moved out of Supervision. Dangling semicolon from
+  that edit fixed.
+- Recompiled: 2 pages, no overfull boxes.
+- **Correction (same day, later):** user confirmed ALL four remaining talks were invited — the
+  cv_facts.md "do not label invited" note for AI & Biology @ EMBL 2026 and the "short talk" label
+  for VIB Spatial Omics 2024 were stale and have been corrected in cv_facts.md (§3, dated notes).
+  CV now lists all four under a bold "Invited:" header, matching the "Co-organised:" style.

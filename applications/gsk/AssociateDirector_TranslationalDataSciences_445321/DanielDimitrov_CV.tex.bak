@@ -2,7 +2,7 @@
 % Compile with: xelatex DanielDimitrov_CV.tex  (run twice)
 \documentclass[11pt,a4paper]{article}
 
-\usepackage[top=1.15cm,bottom=1.15cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage[top=1.4cm,bottom=1.4cm,left=1.5cm,right=1.5cm]{geometry}
 \usepackage[default]{sourcesanspro}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{graphicx}
@@ -13,9 +13,9 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{paracol}
 \usepackage{setspace}
-\setstretch{1.0}
+\setstretch{1.06}
 
-% ========== palette ==========
+% ---------- palette ----------
 \definecolor{accent}{HTML}{0B6E70}   % deep teal
 \definecolor{inktext}{HTML}{2B2B2B}
 \definecolor{softgrey}{HTML}{6A6A6A}
@@ -27,13 +27,13 @@
 \emergencystretch=1.5em
 \hyphenation{bio-log-i-cal om-ics multi-omics}
 
-% ========== section styling ==========
+% ---------- section styling ----------
 \titleformat{\section}
   {\color{accent}\large\bfseries\scshape}
   {}{0em}{}[{\color{accent}\vspace{-2pt}\titlerule[0.6pt]}]
-\titlespacing*{\section}{0pt}{9pt}{5pt}
+\titlespacing*{\section}{0pt}{11pt}{6pt}
 
-% ========== helpers ==========
+% ---------- helpers ----------
 \newcommand{\cvrole}[3]{% role, org+location, dates
   {\bfseries #1}\hfill{\color{softgrey}\itshape #3}\\
   {\color{softgrey}#2}\par\vspace{2pt}}
@@ -50,9 +50,9 @@
 \begin{document}
 
 % ================= HEADER =================
-\begin{minipage}[c]{\textwidth}
+\begin{minipage}[c]{\dimexpr\textwidth-3.4cm\relax}
 {\Huge\bfseries\color{accent}DANIEL B.\ DIMITROV}\\[4pt]
-{\large\color{softgrey}Computational Biologist: Multi-omics, Spatial \& Clinical Data for Target and Biomarker Discovery}\\[7pt]
+{\large\color{softgrey}Computational Biologist --- Machine Learning for Single-cell \& Spatial Multi-omics}\\[7pt]
 {\small
 \faEnvelope\; \href{mailto:daniel.boykov.dimitrov@gmail.com}{daniel.boykov.dimitrov@gmail.com}\sep
 \faPhone*\; +49\,177\,705\,6912\sep
@@ -60,12 +60,16 @@
 \faGithub\; \href{https://github.com/dbdimitrov}{github.com/dbdimitrov}\sep
 \faGraduationCap\; \href{https://tinyurl.com/scholarddimitrov}{Google Scholar}
 }
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{3cm}
+  \raggedleft\includegraphics[width=2.9cm]{photo.png}
 \end{minipage}
 
 \vspace{16pt}
-I build computational frameworks that integrate single-cell, spatial and multi-omics data with
-clinical and phenotypic data, turning them into quantitative evidence on disease mechanism, biomarkers and
-targets. Shipped as production-quality open-source software: 1,000,000+ downloads, used across academia and industry.
+I build computational frameworks that turn single-cell, spatial, and multi-omics data into
+clear, quantitative \mbox{biological} insights --- shipped as production-quality open-source software
+with 600,000+ downloads, used across academia and industry.
 \vspace{4pt}
 
 \columnratio{0.66}
@@ -77,40 +81,39 @@ targets. Shipped as production-quality open-source software: 1,000,000+ download
 
 \cvrole{Postdoctoral Researcher}{Stegle Lab, EMBL \& DKFZ, Heidelberg, DE}{Sep 2024 -- Present}
 \begin{cvitems}
-  \item Developing probabilistic models to infer perturbed
-        intercellular communication in spatial omics data, \textbf{surfacing signalling axes
-        as candidate targets}
-  \item Leading 5 parallel projects, including interpreting transformer
-        foundation models of \textbf{electronic health records}: steering features to expose
-        encoded comorbidity patterns against \textbf{genetic and clinical data};
+  \item Developing probabilistic models to infer perturbed and niche-specific
+        intercellular signalling in spatial omics data
+  \item Conceived and direct 5 parallel student-led projects, incl.\ interpretability
+        of transformer-based EHR foundation models; mentored students to
+        (co-)first authorship
 \end{cvitems}
 
-\cvrole{Early Stage Researcher (PhD)}{Saez Rodriguez Lab, UKHD, Heidelberg, DE}{Sep 2020 -- Aug 2024}
+\cvrole{Early Stage Researcher (PhD)}{Saez Lab, UKHD, Heidelberg, DE}{Sep 2020 -- Aug 2024}
 \begin{cvitems}
-  \item Developed methods to model \textbf{cell-cell communication} from single-cell and
+  \item Developed methods to model cell-cell communication from single-cell and
         spatial (multi-)omics data; established current best practices in the field
-  \item Built and maintain LIANA \& LIANA+, \textbf{300,000+ installs},
-        delivered as reproducible, \textbf{production-quality software}
-  \item Applied these to \textbf{patient cohorts} with clinical collaborators: CKD and IgA
-        nephropathy (MSCA \textit{STRATEGY-CKD}), and the Human Cell Atlas \textit{Nature} study of
-        inflammatory gut disease
+  \item Built and maintain LIANA \& LIANA+ (\textit{Nature Cell Biology}) ---
+        300,000+ installs --- with continuous integration, unit testing, and
+        clear documentation
 \end{cvitems}
 
-\cvrole{Visiting Predoc}{Zeller Group, EMBL (multi-modal host-microbiome data)}{Sep 2022 -- Mar 2023}
-\vspace{2pt}
-\cvrole{Visitor}{Glorieux Lab, Ghent (transcriptomics \& proteomics, CKD patient cohorts)}{May -- Jun 2022}
-\vspace{2pt}
-\cvrole{Junior Data Engineer}{Experian, Sofia (ETL pipeline for terabytes of data)}{Dec 2019 -- Aug 2020}
-\vspace{2pt}
-{\color{softgrey}\textbf{Earlier:} MSc thesis, Glasgow (published R app for RNA-Seq analysis, 2019)\sep IMPRS internship, MPI-CBG Dresden (cryo-EM, 2018)}
+\cvrole{Visiting Predoc}{Zeller Group, EMBL --- multi-modal host-microbiome data}{Sep 2022 -- Mar 2023}
+\vspace{4pt}
+\cvrole{Visitor}{Glorieux Lab, Ghent --- multi-omics of CKD patients}{May -- Jun 2022}
+\vspace{4pt}
+\cvrole{Junior Data Engineer}{Experian, Sofia --- ETL pipeline for terabytes of data}{Dec 2019 -- Aug 2020}
+\vspace{4pt}
+\cvrole{Postgraduate Thesis Project}{University of Glasgow --- published R application for RNA-Seq analysis}{May -- Dec 2019}
+\vspace{4pt}
+\cvrole{IMPRS Internship}{MPI-CBG, Dresden --- cryo-EM subtomogram averaging}{May -- Aug 2018}
 
 \section{Education}
 
 \cvrole{PhD in Computational Biology}{Heidelberg University}{2020 -- 2024}
-\vspace{2pt}
-\cvrole{MSc in Bioinformatics, Distinction}{University of Glasgow}{2018 -- 2019}
-\vspace{2pt}
-\cvrole{BSc (Hons) in Cell Biology, First Class}{University of Stirling}{2014 -- 2018}
+\vspace{3pt}
+\cvrole{MSc in Bioinformatics --- Distinction}{University of Glasgow}{2018 -- 2019}
+\vspace{3pt}
+\cvrole{BSc (Hons) in Cell Biology --- First Class}{University of Stirling}{2014 -- 2018}
 
 % ================= SIDEBAR =================
 \switchcolumn
@@ -119,11 +122,10 @@ targets. Shipped as production-quality open-source software: 1,000,000+ download
 \section{Programming}
 \textbf{Python} and \textbf{R}\\[3pt]
 \textbf{ML:} PyTorch, PyG, scikit-learn\\[3pt]
-\textbf{LLMs:} agent orchestration (Claude Code, MCPs), autointerpretability\\[3pt]
-\textbf{Omics:} scverse, Bioconductor\\[3pt]
-\textbf{Engineering:} Git, continuous integration, unit testing, Conda, Docker, Agile development\\[3pt]
+\textbf{Omics:} scverse, BioConductor\\[3pt]
+\textbf{Engineering:} git, Continuous Integration, Unit testing, conda, docker, Agile development\\[3pt]
 \textbf{Main developer:}\\
-\pkg{LIANA+}{https://github.com/scverse/liana-py},
+\pkg{LIANA+}{https://github.com/saezlab/liana-py},
 \pkg{LIANA}{https://github.com/saezlab/liana},
 \pkg{Cellina}{https://github.com/PMBio/cellina}\\[3pt]
 \textbf{Co-developer:}\\
@@ -136,33 +138,28 @@ Single-cell Best Practices\\[3pt]
 Open Problems in Single-Cell~Analysis
 
 \section{Talks \& Events}
-\textbf{Invited:}\\
-VIB IR, Ghent 2026\\[3pt]
-MOPITAS Symposium, SDU 2025\\[3pt]
 AI \& Biology @ EMBL 2026\\[3pt]
+MOPITAS Symposium 2024\\[3pt]
 VIB Spatial Omics 2024\\[5pt]
 \textbf{Co-organised:}\\
 scverse Hackathon 2023\\[3pt]
 ECCB 2022 tutorial
 
-\section{Funding \& Awards}
-MSCA ITN Fellowship (STRATEGY-CKD)\\[3pt]
-CZI grant (named key person)\\[3pt]
-Research-Based Learning Prize
-
 \section{Languages}
-English (fluent), German (intermediate), Bulgarian (native)
+English: fluent\\[3pt]
+German: intermediate\\[3pt]
+Bulgarian: native
 
 \end{paracol}
 
 % ================= PAGE 2 =================
 \newpage
 
-\section{Selected Publications and Preprints \normalsize\mdseries(out of 18; 4,000+ citations; \# co-first; * corresponding)}
+\section{Selected Publications and Preprints \normalsize\mdseries(out of 18; \# shared co-first, * corresponding)}
 
 \pub{Moeed, A., Schrod, S., Rohbeck, M., Bonder, M.J., Lutsik, P., Stegle, O.* and \me*, 2026.
 Querying Counterfactuals on Tissue Graphs with Supervised Disentanglement (Cellina).
-Under revision, \textit{NeurIPS 2026}.}
+\textit{arXiv preprint}.}
 
 \pub{\textbf{Dimitrov,~D.}\#{}*, Schrod, S.\#{}*, Rohbeck, M. and Stegle, O.*, 2025.
 Interpretation, extrapolation and perturbation of single cells.
@@ -196,17 +193,6 @@ single-cell RNA-Seq data. \textit{Nature Communications}, 13(1).}
 \pub{B\"ulow, R.D.\#, \me\#, Boor, P. and Saez-Rodriguez, J., 2021.
 How will artificial intelligence and bioinformatics change our understanding of
 IgA Nephropathy in the next decade? \textit{Seminars in Immunopathology}, 43(5).}
-
-\section{Supervision \& Leadership}
-\begin{cvitems}
-  \item 10 students supervised to date (5 PhD, 3 MSc, 2 BSc), 5 currently active. Ongoing projects
-        I co-conceived and currently lead: \textbf{EHRx} (EHR foundation-model interpretability; UK~Biobank
-        polygenic-risk enrichment), \textbf{LIANA++} (cell--cell communication at single-cell resolution),
-        \textbf{KIARA} (niche-specific perturbation-effect modelling), and \textbf{Cellina$\to$imaging}
-        (graph and pathology foundation models for tissue counterfactuals)
-  \item Cross-functional and community involvement: scverse ecosystem, Single-cell Best Practices,
-        and Open Problems in Single-Cell Analysis (cell--cell communication task leader)
-\end{cvitems}
 
 \section{References}
 

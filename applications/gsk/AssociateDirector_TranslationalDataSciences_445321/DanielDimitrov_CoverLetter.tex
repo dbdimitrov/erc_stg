@@ -1,0 +1,60 @@
+% Daniel B. Dimitrov — Cover letter, GSK Associate Director, Translational Data Sciences (445321)
+% Compile with: xelatex DanielDimitrov_CoverLetter.tex
+% Styled to match DanielDimitrov_CV.tex (sourcesanspro, teal accent).
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[top=1.2cm,bottom=1.2cm,left=1.8cm,right=1.8cm]{geometry}
+\usepackage[default]{sourcesanspro}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage{setspace}
+\setstretch{1.0}
+
+% ========== palette (matches CV) ==========
+\definecolor{accent}{HTML}{0B6E70}
+\definecolor{inktext}{HTML}{2B2B2B}
+\definecolor{softgrey}{HTML}{6A6A6A}
+
+\color{inktext}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6.5pt}
+\pagestyle{empty}
+\hyphenpenalty=600
+\emergencystretch=1.5em
+
+\newcommand{\sep}{\;{\color{accent}\textbullet}\;}
+
+\begin{document}
+
+% ================= HEADER =================
+{\huge\bfseries\color{accent}DANIEL B.\ DIMITROV}\\[3pt]
+{\small
+\faEnvelope\; \href{mailto:daniel.boykov.dimitrov@gmail.com}{daniel.boykov.dimitrov@gmail.com}\sep
+\faPhone*\; +49\,177\,705\,6912\sep
+\faMapMarker*\; Heidelberg, Germany}\\[2pt]
+{\color{accent}\rule{\linewidth}{0.6pt}}
+
+\vspace{6pt}
+\hfill{\color{softgrey}Heidelberg, 30 August 2026}
+
+\textbf{Re: Associate Director, Translational Data Sciences (Req ID 445321), Heidelberg site}
+
+Dear GSK Recruitment Team,
+
+I am excited to apply for the Associate Director, Translational Data Sciences position (Req ID: 445321) at the Heidelberg site, where I am already based. My career has been driven by a fascination with how computational modelling, powered by emerging omics technologies, redefines the boundaries of biological understanding. Along the way, I have built industry-adopted frameworks that turn single-cell, spatial, and multi-omics data into clear, quantitative insights, and I am eager to bring that same scientific rigour and practical engineering mindset to informing target, biomarker, and patient-selection decisions at GSK.
+
+This focus began during my PhD in Julio Saez-Rodríguez's lab, where my work played a key role in establishing current best practices for cell–cell interaction modelling. Beyond that, I developed LIANA+ (\textit{Nature Cell Biology}), a Python framework for multi-scale, multi-omics analysis that has been installed over 300,000 times and is widely used across academia and industry, along with other extensive databases and computation tools that power mechanistic discovery. I did not just publish this work: I shipped it as reproducible, production-quality software. In doing so, I learned to own analytical workstreams end to end, from data ingestion and quality control to reproducible pipelines and clear reporting to collaborators, while mentoring students in coding and analysis best practices along the way.
+
+Now, in my postdoctoral role in Oliver Stegle's group (DKFZ \& EMBL Heidelberg), as growing spatial and clinical health-record data continue to revolutionise our ability to map disease in its native context, my focus has expanded from building methods to developing the researchers who build them: I conceived and direct five parallel projects, each led by a student I mentor and coach through to delivery. My key initiatives are directly aimed at challenges central to future drug discovery: fusing cell–cell communication with multi-view and deep generative models to pinpoint disease signalling; interpreting transformer-based foundation models of electronic health records, steering their internal features to reveal the comorbidity patterns they encode and testing these for polygenic-risk burdens; and applying these approaches with clinical collaborators, from patient multi-omics in chronic kidney disease to a Human Cell Atlas \textit{Nature} study of inflammatory gut disease.
+
+My philosophy is crystallised in a perspective I co-led, now published in \textit{Nature Reviews Genetics}, where we note that current exploratory omics analyses excel at generating hypotheses, but a gap separates them from the causal evidence needed to act on a target or biomarker. That gap, we argue, is closed by combining omics data with perturbations, genetics, and patient-level information to uncover cause-and-effect relationships. I recently put this into practice through Cellina, a graph deep-learning model that predicts how cells respond when their tissue microenvironment is perturbed, mentoring its first author to a preprint, currently under review in a top AI/ML conference. I have supervised ten students to date, taking several through to (co-)first authorship and merging their contributions into released, tested codebases; and I routinely translate technical results for non-specialist audiences, from Nature-family reviews to community best-practice guides.
+
+My goal has always been to build more than predictive models: interpretable, rigorously engineered frameworks that generate quantitative, biologically grounded evidence for decisions. I am confident I can bring this vision, along with end-to-end workflow ownership and collaborative leadership, to help GSK turn genetics and multi-omics data into insights that get ahead of disease.
+
+Thank you for considering my application. I am eager to discuss how my experience can contribute to GSK's mission to impact health at scale.
+
+Sincerely,\\
+Daniel Dimitrov
+
+\end{document}
