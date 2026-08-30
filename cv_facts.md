@@ -17,7 +17,7 @@
 |---|---|
 | 2024-09 – present | Postdoc, Stegle lab, EMBL/DKFZ Heidelberg — probabilistic models of perturbed & niche-specific intercellular signalling in spatial omics |
 | 2020-09 – 2024-08 | Early Stage Researcher (MSCA ITN fellow), Saez lab, UKHD — CCC methods from single-cell & spatial (multi-)omics |
-| 2022-05 – 2023-06 | Visitor, Glorieux lab, Ghent University Hospital — CKD multi-omics integration |
+| 2022-05 – 2022-06 | Visitor, Glorieux lab, Ghent University Hospital — CKD multi-omics integration |
 | 2022-09 – 2023-03 | Visiting predoc, Zeller group, EMBL — host–microbiome spatial data |
 | 2019-12 – 2020-08 | Junior Data Engineer, Experian (Sofia) — terabyte-scale ETL |
 

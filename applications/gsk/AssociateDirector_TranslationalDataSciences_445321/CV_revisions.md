@@ -1,57 +1,54 @@
-# CV revisions for the AD application
+# CV tailoring — record of what was applied (2026-08-29)
 
-*Paste these into your existing `DanielDimitrov_Resume.docx`. Goal: project AD-level scope on first glance — lead with impact and leadership, keep publications as support. Numbers marked ⟳ — refresh before submitting.*
+*Supersedes the earlier draft-recommendation version of this file, which was stale (it proposed
+fixes already present in the .tex). Backup of the pre-tailoring CV: `DanielDimitrov_CV.tex.bak`.*
 
----
+## Why
 
-## 1. ADD a top "Impact" strip (directly under your name/contact)
+The posting's Basic Qualification #3 is "analysing large-scale genetic and multi-omics datasets and
+integrating these with clinical or phenotypic data". The previous CV contained **zero** instances of
+*genetic, clinical, phenotype, patient cohort, proteomics, biomarker, target, polygenic* — the
+evidence existed but was invisible to a recruiter skim. That was the highest-leverage fixable gap.
 
-> **Impact:** ⟳4,000+ citations · h-index ⟳14 · i10 ⟳16 · author/maintainer of open-source tools with **⟳600k+ combined installs** (LIANA/`liana-py` ⟳300k+; `decoupleR` ⟳470k) used across the single-cell community · 10 students supervised (4 ongoing projects; 2 taken to co-/first authorship)
+## Applied
 
-*This is the single most important change — it makes the "punch above Principal" case in three seconds.*
+1. **Headline** → "Computational Biologist — Multi-omics, Spatial & Clinical Data for Target and
+   Biomarker Discovery" (mirrors the posting's own "target, biomarker and patient-selection" framing).
+2. **Summary** → adds "integrated with clinical and phenotypic data", "disease mechanism, biomarkers
+   and targets". Download claim split: **300,000+ installs** (`liana-py`, his own) rather than the
+   previous 600k, which silently absorbed co-authored `decoupleR`.
+3. **Stegle bullet** → EHRx spelled out: EHR foundation models, feature steering, **polygenic-risk
+   enrichment against UK Biobank genetic and clinical data**. Attributed "conceived and direct" —
+   the PRS arm is student-run, so a hands-on claim would not survive interview.
+4. **Saez lab, new bullet** → patient cohorts, CKD and IgA nephropathy (MSCA STRATEGY-CKD), and the
+   HCA *Nature* gut-disease study with his own CCC analysis called out. Previously invisible.
+5. **Ghent** → "transcriptomics & proteomics, CKD patient cohorts" (proteomics is named twice in the
+   posting and appeared nowhere on the CV). Dates confirmed as **May–Jun 2022**, 2 months;
+   `cv_facts.md:20` was wrong (said 2022-05–2023-06) and has been corrected.
+6. **Photo removed** — UK convention, and it was 2.6 MB of a 1.6 MB PDF. PDF is now ~30 KB.
+7. **Sidebar: Funding & Awards added** — MSCA ITN Fellowship (STRATEGY-CKD), CZI grant (named key
+   person), Research-Based Learning Prize.
+8. **Talks** → three additions from `cv_facts.md` (VIB Ghent invited seminar 2026, GAF Sofia 2025,
+   AI Seminar @ EMBL 2026) and split into *Invited* / *Selected & institutional*, since three are
+   invited and that distinction was not being made. AI & Biology @ EMBL 2026 stays non-invited
+   per `cv_facts.md`.
+9. **Supervision & Leadership section added** (page 2, which was ~50% empty) — leadership is the
+   thinnest part of the case for an *Associate Director* title and is a preferred qualification.
+10. **Publications header** → adds "4,000+ citations, h-index 14".
+11. **Layout** — line spacing 1.06→1.0, margins 1.4→1.15 cm, tighter section spacing, pre-PhD
+    entries (Glasgow thesis, MPI-CBG internship) compressed to one "Earlier:" line. Holds at
+    2 pages; the two-column look is unchanged.
 
----
+## Not applied
 
-## 2. FIX the Perspective (currently listed as "Under Review")
+- **Peer review section** — user judged it irrelevant for an industry role. Agreed.
+- **References → "available on request"** — left as-is (named senior referees are a positive
+  signal). Optional change if uncomfortable putting supervisors' emails into an ATS.
 
-Replace with its published form:
+## Open risks no CV edit fixes
 
-> Dimitrov, D.#,\*, Schrod, S.#,\*, Rohbeck, M. & Stegle, O.\*, 2025. **Interpretation, Extrapolation, and Perturbation of Single Cells.** *Nature Reviews Genetics.*
-
-*(Confirm final volume/pages; correct that it is published, not under review.)*
-
----
-
-## 3. ADD a "Supervision & Leadership" section (new, above or beside Achievements)
-
-> **Supervision & Leadership**
-> - Supervise 5 PhD, 3 MSc, 2 BSc students. Four concurrent projects I conceived/direct:
->   - **EHRx** — interpreting transformer-based EHR foundation models (feature steering, SAE probes); PRS enrichment against the interpretable factors on UK Biobank genetic + EHR data
->   - **LIANA++** — extending LIANA+ to single-cell technologies (multimodal CCC)
->   - **KIARA** — cell-type/niche-specific perturbation-effect modelling
->   - **Cellina→imaging** — foundational pathology models for tissue-image counterfactuals
-> - Mentored students to authorship: **Moeed (first author, Cellina)**, **Elyas (co-first, MetalinksDB)**; routinely direct student work into released, tested codebases (e.g. merged `inflow-score` PR in `liana-py`).
-> - Contributor: Human Cell Atlas, Single-cell Best Practices consortium, Open Problems in Single-Cell Analysis (CCC task).
-
----
-
-## 4. REVISE "Selected Publications" toward translational relevance
-
-Keep: Nat Commun 2022 (CCC benchmark), LIANA+ (Nat Cell Biol 2024), the Nat Rev Genet Perspective (fixed above), MetalinksDB, LIANA+Tensor-cell2cell.
-**Add these (high citation + disease relevance for a translational role):**
-
-> - Oliver, ... **Dimitrov, D.** (CCC analysis) et al., 2024. **Single-cell integration reveals metaplasia in inflammatory gut diseases.** *Nature.* *(Human Cell Atlas)*
-> - **Dimitrov, D.** (2nd author), ... 2024. **Integrating single-cell multi-omics and prior biological knowledge for functional characterization of the immune system.** *Nature Immunology.*
-> - Add **Cellina** (last & co-corresponding, preprint 2026) under a "Preprints" line.
-
-*(Fill exact author lists/citations from your records. Optionally add a one-line note that `decoupleR` (*Bioinformatics Advances*, ⟳1,150 cites) and Single-cell Best Practices (*Nat Rev Genet*, ⟳1,240 cites) are among your co-authored works, to signal citation heft.)*
-
----
-
-## 5. PROGRAMMING section — small tightening
-
-Current content is good. Consider promoting it nearer the top and adding one line making the production-engineering explicit (it is the role's #1 required theme):
-
-> Reproducible, production-grade pipelines: git, CI, unit testing, conda, Docker — applied in released packages (LIANA+, decoupleR).
-
----
+- **Seniority.** GSK posted Principal Scientist ×2 (446240, 446659) and Director (445320) in the
+  same family. AD sits mid-ladder at ~2 years post-PhD. User chose to target AD only.
+- **Location.** User will not relocate to the UK. Posting body says "based in the United Kingdom"
+  but carries a Germany salary block (EUR 82,500–137,500), implying a continental site among the
+  three listed. **Unverified — must be confirmed on the live posting.**
