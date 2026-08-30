@@ -89,3 +89,52 @@ evidence existed but was invisible to a recruiter skim. That was the highest-lev
   cv_facts.md "do not label invited" note for AI & Biology @ EMBL 2026 and the "short talk" label
   for VIB Spatial Omics 2024 were stale and have been corrected in cv_facts.md (§3, dated notes).
   CV now lists all four under a bold "Invited:" header, matching the "Co-organised:" style.
+
+## Whitespace redistribution pass (2026-08-30)
+
+**Diagnosis.** Rendered both pages to PNG and measured: page 1 had ~35 mm of dead space below the
+content, page 2 had ~82 mm. The text itself was set at `\setstretch{1.0}` with 9 pt section leads —
+so the page read as *dense text plus a large trailing gap*, which is what "cramped" was describing.
+The problem was distribution, not content volume; **cutting content would have made it worse.**
+
+Applied in two passes, re-rendering and inspecting the images after each (a "2 pages" line in the
+log proves nothing about distribution, and under `paracol` a page-1 overflow silently becomes a
+third page):
+
+- Pass A — `\setstretch` 1.0 → **1.06**; `\titlespacing` 9 pt/5 pt → **14 pt/6 pt**; `\pub` trailing
+  space 6 pt → **9 pt**.
+- Pass B — `cvitems` itemsep 2 → **3.5 pt**, topsep 2.5 → **3.5 pt**, closing space 5 → **7 pt**;
+  `\cvrole` trailing space 2 → **3 pt**; one-line role/education separators 2 → **4 pt**; all sidebar
+  `\\[3pt]` → **`\\[4pt]`**.
+- **Margins deliberately untouched** (1.15 cm top/bottom). Highest-leverage knob and the one most
+  likely to tip page 1 over; held in reserve.
+- **Supervision & Leadership expanded** (page 2) — the 4 active projects broken out of one dense
+  run-on bullet into a nested per-project list, and the authorship/codebase outcome promoted into
+  the headline bullet. This is simultaneously where the dead space was and the thinnest dimension of
+  an *Associate Director* case (team-leading/mentoring is a preferred qualification). Attribution
+  language unchanged: "co-conceived and currently lead", EHRx PRS arm still described as
+  feature-steering tested against UK Biobank, no hands-on genetics claim.
+
+**Result:** page 1 trailing gap 35 → ~10 mm, page 2 82 → ~32 mm. Still exactly 2 pages, no overfull
+boxes.
+
+### Photo — decided against (again), 2026-08-30
+
+User asked whether to re-add it since the target site is Heidelberg. No. German practice is
+*Lichtbild-optional* post-AGG and large employers increasingly instruct recruiters to disregard
+photos; the upside is neutral at best. Against that: it consumes the header space the spacing fix
+needs, it adds no evidence a reviewer can act on, and the earlier removal took the PDF from 1.6 MB
+to ~30 KB (`photo.png` is 2.6 MB). Keep it out. `photo.png` retained in the directory unused.
+
+### No further filler needed
+
+~32 mm of trailing space on page 2 of a two-page CV is a normal bottom margin, not a defect. Do not
+chase it with content — in particular, do not add a third referee to fill the References row: the
+open question on that block is whether to *remove* the supervisors' emails ("available on request"),
+and industry applications are confidential from them for now.
+
+### Nested-list punctuation (same pass)
+
+Project lines set as `\textbf{Name}: description` — colon, not comma. Comma reads as apposition where
+the reader expects a definition; colon is the same substitution used for the headline and
+patient-cohorts bullet in the em-dash pass above.
