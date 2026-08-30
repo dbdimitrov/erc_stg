@@ -29,7 +29,7 @@
 
 % ========== section styling ==========
 \titleformat{\section}
-  {\color{accent}\large\bfseries\scshape}
+  {\color{accent}\fontsize{13}{15}\selectfont\bfseries\scshape}
   {}{0em}{}[{\color{accent}\vspace{-2pt}\titlerule[0.6pt]}]
 \titlespacing*{\section}{0pt}{14pt}{6pt}
 
@@ -39,7 +39,7 @@
   {\color{softgrey}#2}\par\vspace{3pt}}
 \newcommand{\cvline}[3]{% one-line role
   \par\noindent{\bfseries #1}, {\color{softgrey}#2}\hfill{\color{softgrey}\itshape #3}\par\vspace{4pt}}
-\newcommand{\sep}{\;{\color{accent}\textbullet}\;}
+\newcommand{\sep}{\;{\color{accent}\rule[-0.15ex]{0.6pt}{1.55ex}}\;}
 \newenvironment{cvitems}
   {\begin{itemize}[leftmargin=1.05em,itemsep=3.5pt,parsep=0pt,topsep=3.5pt,label={\color{accent}\small\textbullet}]}
   {\end{itemize}\vspace{7pt}}
@@ -50,19 +50,23 @@
 \begin{document}
 
 % ================= HEADER =================
-\begin{minipage}[c]{\textwidth}
-{\Huge\bfseries\color{accent}DANIEL B.\ DIMITROV}\\[4pt]
-
-{\small
-\faEnvelope\; \href{mailto:daniel.boykov.dimitrov@gmail.com}{daniel.boykov.dimitrov@gmail.com}\sep
+\begin{minipage}[c]{0.575\textwidth}
+{\Huge\bfseries\color{accent}DANIEL B.\ DIMITROV}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.405\textwidth}
+{\raggedleft\small
+\faEnvelope\; \href{mailto:daniel.boykov.dimitrov@gmail.com}{daniel.boykov.dimitrov@gmail.com}\\[3pt]
 \faPhone*\; +49\,177\,705\,6912\sep
-\faMapMarker*\; Heidelberg, Germany\\[4pt]
+\faMapMarker*\; Heidelberg, Germany\\[3pt]
 \faGithub\; \href{https://github.com/dbdimitrov}{github.com/dbdimitrov}\sep
 \faGraduationCap\; \href{https://tinyurl.com/scholarddimitrov}{Google Scholar}
-}
+\par}
 \end{minipage}
 
-\vspace{16pt}
+\vspace{9pt}
+{\color{accent}\rule{\linewidth}{0.6pt}}
+
+\vspace{9pt}
 I build computational frameworks that integrate single-cell, spatial and multi-omics data with
 clinical and phenotypic data, turning them into quantitative evidence on disease mechanism, biomarkers and
 targets. The tools I build and co-develop ship as production-quality open-source software:

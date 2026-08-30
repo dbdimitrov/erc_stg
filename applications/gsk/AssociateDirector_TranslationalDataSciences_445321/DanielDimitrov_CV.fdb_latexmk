@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1788107957.85506 "/Users/b260-admin/Repos/pi_dossier/applications/gsk/AssociateDirector_TranslationalDataSciences_445321/DanielDimitrov_CV.tex" "DanielDimitrov_CV.pdf" "DanielDimitrov_CV" 1788107958.34916 0
-  "/Users/b260-admin/Repos/pi_dossier/applications/gsk/AssociateDirector_TranslationalDataSciences_445321/DanielDimitrov_CV.tex" 1788107957.63338 9899 9d5cde5629eebe22f4ac3226331f05e9 ""
+["pdflatex"] 1788110487.97138 "/Users/b260-admin/Repos/pi_dossier/applications/gsk/AssociateDirector_TranslationalDataSciences_445321/DanielDimitrov_CV.tex" "DanielDimitrov_CV.pdf" "DanielDimitrov_CV" 1788110488.48235 0
+  "/Users/b260-admin/Repos/pi_dossier/applications/gsk/AssociateDirector_TranslationalDataSciences_445321/DanielDimitrov_CV.tex" 1788110487.38018 10064 ac252d100b09b133633385381a1b851e ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1622837620 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -120,9 +120,9 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1779784921 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1779784904 3636770 cd5cc585df12fe590367bec32545e0bb ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "DanielDimitrov_CV.aux" 1788107958.26561 1422 93f0f98dea75293df35a1875715146c3 "pdflatex"
-  "DanielDimitrov_CV.out" 1788107958.26606 1588 0c9f4a671c7e6873455262c11fd6be90 "pdflatex"
-  "DanielDimitrov_CV.tex" 1788107957.63338 9899 9d5cde5629eebe22f4ac3226331f05e9 ""
+  "DanielDimitrov_CV.aux" 1788110488.39655 1422 93f0f98dea75293df35a1875715146c3 "pdflatex"
+  "DanielDimitrov_CV.out" 1788110488.39706 1588 0c9f4a671c7e6873455262c11fd6be90 "pdflatex"
+  "DanielDimitrov_CV.tex" 1788110487.38018 10064 ac252d100b09b133633385381a1b851e ""
   (generated)
   "DanielDimitrov_CV.aux"
   "DanielDimitrov_CV.log"
