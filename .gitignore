@@ -1,2 +1,12 @@
 *.pdf
 .DS_Store
+
+# LaTeX build artifacts
+build/
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.synctex.gz
+texput.log
