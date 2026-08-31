@@ -118,13 +118,23 @@ third page):
 **Result:** page 1 trailing gap 35 → ~10 mm, page 2 82 → ~32 mm. Still exactly 2 pages, no overfull
 boxes.
 
-### Photo — decided against (again), 2026-08-30
+### Photo — REINSTATED 2026-08-30 (user's call, overriding the recommendation below)
 
-User asked whether to re-add it since the target site is Heidelberg. No. German practice is
-*Lichtbild-optional* post-AGG and large employers increasingly instruct recruiters to disregard
-photos; the upside is neutral at best. Against that: it consumes the header space the spacing fix
-needs, it adds no evidence a reviewer can act on, and the earlier removal took the PDF from 1.6 MB
-to ~30 KB (`photo.png` is 2.6 MB). Keep it out. `photo.png` retained in the directory unused.
+Recommendation given, twice, was to leave it out: German practice is *Lichtbild-optional* post-AGG,
+large employers increasingly instruct recruiters to disregard photos, so the upside is neutral at
+best; against that it costs header space and PDF weight, and adds no evidence a reviewer can act on.
+User reviewed a rendered side-by-side and chose to include it. Decision made with the costs stated;
+do not re-litigate.
+
+**As shipped:** header restructured to name + two contact lines on the left (0.735\textwidth),
+photo top-right (0.235\textwidth) at `height=2.35cm`, nudged with `\raisebox{4pt}` and a trailing
+`\hspace*{6pt}` so it sits level with the header text block rather than hanging below it.
+Holds at 2 pages.
+
+**Outstanding:** `photo.png` is 1749x1538 / 2.5 MB, which is what takes the CV PDF from ~270 KB to
+**1.6 MB**. Downsampling to ~600 px would bring it back under ~400 KB with no visible change at
+2.35 cm. Offered twice, not taken up. Also near-square (1.14:1) where a conventional Bewerbungsfoto
+is portrait 3:4.
 
 ### No further filler needed
 

@@ -149,10 +149,6 @@ INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomefree
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/fontawesome5/fa5free1solid.tfm
-INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/sourcesans/TS1SourceSansThree-TLF.fd
-INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/sourcesans/TS1SourceSansThree-TLF.fd
-INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/sourcesans/TS1SourceSansThree-TLF.fd
-INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/sourcesans/SourceSans3-Regular-tlf-ts1.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 INPUT /usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
@@ -166,9 +162,6 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/sourcesans/a_uz6pbi.enc
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/vf/adobe/sourcesans/SourceSans3-Regular-tlf-t1.vf
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/sourcesans/SourceSans3-Regular-tlf-t1--base.tfm
-INPUT /usr/local/texlive/2026/texmf-dist/fonts/vf/adobe/sourcesans/SourceSans3-Regular-tlf-ts1.vf
-INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/sourcesans/SourceSans3-Regular-tlf-ts1--base.tfm
-INPUT /usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/sourcesans/a_44crgg.enc
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/vf/adobe/sourcesans/SourceSans3-Regular-tlf-t1.vf
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/sourcesans/SourceSans3-Regular-tlf-t1--base.tfm
