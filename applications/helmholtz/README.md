@@ -7,29 +7,30 @@
 | Requirement | File | Status |
 |---|---|---|
 | Publication list, 3 highlighted | `publication_summary.md` | drafted, user-edited |
-| Research plan (max 3 pp) | `research_plan.md` → `research_plan.pdf` via `build/render.sh` | **v1 draft**; body+figure+table = 3 pages, references spill ~0.7 page |
-| Figure 1 | `figures/make_fig1.py` → `figures/research_plan_fig1.{svg,pdf,png}` | v1; reproducible, restyle later in Illustrator/Inkscape if wanted |
-| Bibliography | `research_plan.bib` (52 entries, DOIs verified 2026-09-21) + `research_plan_refs_notes.md` | done |
+| Research plan (max 3 pp) | `research_plan.tex` → `research_plan.pdf` via `build/render.sh` (latexmk, xelatex, natbib `\citep`, `naturemag.bst`) | **v2 draft**; body+figure+table ≈ 2.7 pages, references start on page 3 and end on page 4 |
+| Figure 1 | `figures/make_fig1.py` → `figures/research_plan_fig1.{svg,pdf,png}` | v2; reproducible |
+| Bibliography | `research_plan.bib` (59 entries, DOIs verified 2026-09-21) + `research_plan_refs_notes.md` | done |
 | Referees | `references.md` | from Aithyra package; re-check |
 | Cover letter / email | `cover_email.md` | to do |
 | Institute intelligence | `additional_info/` | done |
 
-Render: `./build/render.sh` (pandoc → xelatex, Nature numeric CSL, TNR 11 pt, 2 cm margins; header in `build/header.tex`). Prints the page count.
+Render: `./build/render.sh` (latexmk -xelatex; TNR 11 pt, 2 cm margins, natbib superscript numbers, Nature bst; aux files in `build/latex/`). Prints the page count. The markdown drafts are archived in `build/research_plan_v1.md` and `build/research_plan_v2_source.md`; **edit `research_plan.tex` from now on.** `url`/`note` fields were stripped from the bib so references stay short.
 
-## Research plan — locked decisions (grill-me session, 2026-09-21)
+## Research plan — locked decisions (v2, 2026-09-21; supersedes v1)
 
-1. **Title:** "What if, and why: tissue representations one can intervene on, interpret and test".
-2. **Architecture:** four aims. Aim 1 *Build* (top of figure) is the thing itself; Aims 2 *Intervene*, 3 *Interpret*, 4 *Test* are what make the build worthwhile. "The three without building them sound ungrounded."
-3. **Aim 1 (the model):** generative model of tissue with a latent structured by design: intrinsic identity (z), extrinsic microenvironment (s) [Cellina], explicit perturbation/context term in a programme space [KIARA]. LIANA/OmniPath ligand–receptor + pathway layer = vocabulary for interventions and feature names. Prior knowledge is an *optional* inductive bias, never a requirement. No scale claim ("compete on what the representation can be asked, not on cells"). Trained on spatial atlases + spatial perturbation screens (Perturb-CAST, CRISPRmap, Perturb-FISH, Perturb-map). Transcriptomics first, proteomics later.
-4. **Aim 2 (intervene):** counterfactual queries of two kinds: ligand/treatment interventions (node perturbation; cite TERRA, SpatialProp as existing attempts) and response to a different neighbourhood (edge perturbation; cite MintFlow). Scored on held-out contexts, gene level, vs linear and spatially-uninformed baselines. Causality claim kept with the operational hedge (not Pearlian).
-5. **Aim 3 (interpret):** two strands. (a) Mechanistic, effect-level: KIARA decomposition into global cell-type-specific vs local niche response, built on OmniPath/LIANA priors. (b) Feature-level: SAEs + LLM autointerpretation with judge; ehrx in **one sentence, no details**. Join: an interpretation counts only if steering the feature changes the counterfactual → candidate targets.
-6. **Aim 4 (test):** Open Problems task series for tissue representations (Novae, Nicheformer, TERRA, VirTues, ours). Ground truth: interventional (spatial screens), observational (validated interactions curated by LLM agents, extending scBaseCount's agentic curation; extraction itself benchmarked), mechanistic (prior knowledge, scores interpretations only). Mandatory spatially-uninformed baseline floor. Not communication-only.
-7. **Page budget:** opening ~0.35, starting point ~0.35, figure ~0.4, aims ~1.5, fit/translation/table ~0.4. No separate past-research section (publication summary covers it).
-8. **Fit / clinic:** CRC anchor disease; name Theis's ecosystem (Nicheformer, Open Problems) and DKFZ (Perturb-CAST); other PIs by group topic only (cells→patients, tumour neighbourhoods, pathology/microscopy images); Marr only via the M1 Clinical AI Consultants programme. Two-step translation: target nomination, then patient-level readout. No clinical tool / trial / virtual patient claims.
-9. **Timeline/team/funding:** compact table (years 1–2 / 2–4 / 4–5 × aims + group size). One sentence: ERC StG (eligible from 2027) on Aims 1–3; record = MSCA + named key person on CZI LIANA+ grant (Saeys). **Nothing invented** (no DFG/internal projects).
-10. **Venues:** Nature Methods and sister journals primary; ML venues secondary but present, one sentence.
-11. **Figure:** Cellina Fig. 1 visual language (focal cell v with bar-chart neighbours; blue z / red s; lightning bolt) + perspective's boxed panels. Top: tissue → graph → encoder → structured latent (+ dashed optional prior knowledge) → decoder. Bottom: Intervene / Interpret / Test, with a red "steer" arrow from Interpret back to Intervene.
-12. **Voice:** first person, future tense with the user's hedges (will / I envision / I anticipate); no spec-sheet present tense; no slop vocabulary; minimal em-dashes; keep the two signature lines (generalization epigram; "ill-posed in general, well-posed in practice").
+Blueprint: `build/audit_v2.md` (auditor pass). v1 kept at `build/research_plan_v1.{md,pdf}`.
+
+1. **Title:** "What if, and why: tissue representations one can intervene on, interpret and test". "Test" is bound to Aim 1 by one clause in the opening.
+2. **Aim order:** 1 *Gather data and build ground truth* → 2 *Build tissue representations* → 3 *Intervene* → 4 *Interpret*. Data first in text, figure and table; the benchmark is Aim 1's deliverable, not an aim.
+3. **Two model families, equals, developed separately** (not one model): decomposable/interpretable by design (KIARA lineage; LIANA/OmniPath vocabulary; prior knowledge optional) and high-capacity/black-box (class of TERRA/Nicheformer/Novae, cited as the class, never as a bar cleared). One first model of each kind (KIARA, Cellina), each developed into a line. Counterfactual requirement stated once for both. No scale claim.
+4. **Aim 1 ground truth, three sources:** spatial perturbation screens cited as one unnamed group (Perturb-CAST inside the group only, never named, no DKFZ framing); measured contacts (LIPSTIC/uLIPSTIC, match-seq = the one with a causal layer, CytoSignal PLA ground truth for five LR pairs); LLM-agent-curated validated interactions extending scBaseCount-style curation, extractor benchmarked. No atlas harmonization. TERRA cited once as motivation (112M cells; panels absorbed as a batch token; absent ≠ unexpressed). Moleculent has no publication → not cited.
+5. **Aim 3:** node (what neighbours express; parameterized via the LR layer) and edge (which neighbours) perturbations, same interface on both families; TERRA/SpatialProp/MintFlow cited as unvalidated attempts. Banned phrase: "Cellina's validated node perturbations". Safe: "pathway-targeted neighbour perturbations built from prior knowledge recover their responses".
+6. **Aim 4, two orthogonal lines:** decomposable models read through their structure (KIARA: global cell-type vs local niche); black-box read post hoc (SAEs + blind LLM description + independent judge). ehrx one sentence. PK-informed SAEs one clause. Bridge rule: an interpretation counts only if steering a feature or zeroing a term changes the Aim 3 counterfactual.
+7. **Fit:** CHC via Nicheformer + Open Problems; partners by topic only; CRC anchor; two-step translation. M1 Clinical AI Consultants and the H&E/pathology speculation dropped (auditor call; restore if wanted).
+8. **Timeline table:** rows years 1–2 / 2–4 / 4–5, columns in aim order + group size. Funding facts only: MSCA fellowship, named key person on CZI grant (Saeys), ERC StG eligible 2027 on Aims 2–4. Venues sentence folded into the Fit paragraph.
+9. **Figure (v2):** perspective-style boxed bands, four aims top-down, tissue-as-graph glyph the only Cellina borrow; two equal family boxes in Aim 2; dashed red steer arrow from Aim 4 to Aim 3; only LIANA/OmniPath named. 14.6 × 9.5 cm at 0.86 textwidth.
+10. **Layout:** LaTeX source with `\citep`; body+figure+table ≈ 2.7 pages; references (35 cited of 59 in bib) at 8 pt two columns, starting on page 3.
+11. **Voice:** unchanged (first person, future tense with hedges, no slop, signature lines kept).
 
 ## Facts to keep straight (from the bib check)
 
@@ -38,10 +39,11 @@ Render: `./build/render.sh` (pandoc → xelatex, Nature numeric CSL, TNR 11 pt, 
 - SAFFRON (Handa et al. 2026): SAEs on spatial FMs; none beats baselines on local microenvironment. Kendiukhov 2026: SAE features encode co-expression, not causal logic.
 - Nicheformer first author Tejada-Lapuerta; TERRA = Birk et al., Lotfollahi senior; Perturb-FISH is *Cell* 2025; CRISPRmap = Gu et al., *Nat Biotechnol* 2025.
 
+- CytoSignal = Liu et al., *Nat Genet* 2026 (Welch lab); ground truth = PLA on adjacent sections, 5 LR pairs, mouse embryo. match-seq = Du et al. (Bassik lab), bioRxiv Sept 2026. Moleculent: no publication as of 2026-09-21.
+
 ## Open items
 
-- [ ] Decide whether references count towards the 3 pages. If yes: cut ~0.7 page (drop optional refs; trim text) or move to 2-column/8 pt.
-- [ ] Preprint entries render the DOI twice under the Nature CSL (url + doi fields); strip `url` for bioRxiv entries or switch CSL.
-- [ ] Table wording: "RSE" → spell out; "Community adoption" is vague.
+- [ ] Decide whether references count towards the 3 pages. If yes: cut ~0.6 page of text.
+- [x] Preprint entries no longer print the DOI twice (`url` stripped where `doi` present).
 - [ ] Cover letter; re-check `references.md` trio for Helmholtz; CV referee trio consistency.
 - [ ] Numbers to refresh at submission: 300,000 downloads, citations, Cellina venue status.

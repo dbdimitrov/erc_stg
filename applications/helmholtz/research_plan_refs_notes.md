@@ -111,3 +111,294 @@ Partial gaps inside otherwise verified entries:
 10. **The Cell PII S0092-8674(26)00998-0 resolves to scBaseCount** (Youngblut et al., *Cell* 189(19):5932–5944.e6, 2026, doi:10.1016/j.cell.2026.08.025) — an AI-agent-curated, auto-updating single-cell data repository from the Arc Institute, not a benchmarking-methodology paper as such.
 11. **SpatialProp and MintFlow both exist**, but as preprints only (bioRxiv); MintFlow is not indexed in PubMed.
 12. **SAFFRON (Handa et al. 2026) is the direct precedent for Aim 2** — sparse autoencoders applied to spatial transcriptomics foundation models, concluding that no SFM beats naive baselines on local microenvironment structure.
+
+
+## Ground-truth references added for v2 (2026-09-21)
+
+# Ground-truth resources for benchmarking tissue / cell–cell communication models
+
+Companion notes to `groundtruth_refs.bib`. Verification date: **2026-09-21**.
+Verification method: DOIs resolved against the Crossref REST API (`api.crossref.org/works/<doi>`)
+or the bioRxiv details API (`api.biorxiv.org/details/biorxiv/<doi>`) for preprints; content
+claims checked against the publisher/PMC full text or the bioRxiv-served abstract.
+Every field in the .bib (author list, journal, volume, issue, pages, year, DOI) is **VERIFIED**
+unless explicitly flagged below.
+
+---
+
+## 1. `pasqual2018lipstic` — LIPSTIC
+
+**What it is.** LIPSTIC (Labelling Immune Partnerships by SorTagging Intercellular Contacts) is a
+genetically encoded intercellular enzymatic labelling system: a sortase A fused to a ligand on the
+"donor" cell transfers a biotinylated substrate onto an acceptor peptide (G5) fused to the cognate
+receptor on the "recipient" cell, so that only cells that physically engaged through that
+receptor–ligand pair carry the label. Demonstrated in vivo for CD40L–CD40 in T cell–dendritic cell
+interactions in mouse lymph nodes.
+
+**Ground truth it yields.** A direct, physically grounded, *in vivo* readout of which individual
+cells have engaged which partner cells, recoverable by flow cytometry/sorting and therefore
+combinable with scRNA-seq. This is the canonical positive-control label for "did cell A actually
+touch cell B", i.e. exactly the quantity CCC inference methods only ever predict indirectly.
+
+**Caveats.** The original LIPSTIC is *pair-specific*: it records interactions only through the one
+engineered receptor–ligand pair (CD40L–CD40), so it cannot enumerate an unbiased interactome. It
+requires transgenic mice and is dissociation-based (no tissue coordinates are retained), so it gives
+pair identity but not spatial position.
+
+**Flags.** All bibliographic fields VERIFIED (Crossref: Nature 553(7689):496–500, 2018,
+10.1038/nature25442).
+
+---
+
+## 2. `nakandakarihiga2024ulipstic` — uLIPSTIC
+
+**What it is.** The universal version of LIPSTIC. Sortase and the G5 acceptor are displayed on the
+cell surface generically rather than fused to a specific receptor–ligand pair, so label transfer
+happens on *any* sufficiently close/durable cell–cell contact, irrespective of which molecules
+mediate it. The paper couples uLIPSTIC with single-cell transcriptomics to catalogue immune
+populations physically interacting with intestinal epithelial cells and to follow the interactome of
+LCMV-specific CD8⁺ T cells across organs after systemic infection.
+
+**Ground truth it yields.** Labelled *interacting cell pairs in vivo* with a paired transcriptome
+for the labelled cell — i.e. an experimentally measured, receptor-agnostic contact graph over cell
+types/states. This is the single strongest available benchmark target for CCC methods that claim to
+predict which cell types communicate in a tissue, and it is generated in native tissue rather than
+in dissociated or reaggregated cells.
+
+**Caveats.** Still requires transgenic mice (mouse-only, no human tissue); labelling reports
+*contact*, not which ligand–receptor pair carried the signal, so it validates the cell-pair layer of
+a CCC prediction but not the LR-pair layer; label intensity depends on contact duration/avidity, so
+transient interactions are under-recovered; readout is after dissociation, so spatial coordinates
+are lost.
+
+**Flags.** All bibliographic fields VERIFIED (Crossref: Nature 627(8003):399–406, 6 March 2024,
+10.1038/s41586-024-07134-4; 18 authors as listed). The preprint DOI in the `note` field
+(10.1101/2023.03.16.533003) VERIFIED via the bioRxiv API — note the preprint carries a different
+title, "Universal recording of cell-cell contacts in vivo for interaction-based transcriptomics"
+(posted 20 March 2023).
+
+---
+
+## 3. `du2026matchseq` — match-seq (the requested bioRxiv preprint)
+
+**What it is.** The preprint at `biorxiv.org/content/10.64898/2026.09.16.752238v1` is
+**"In vivo intercellular CRISPR screens using viral proximity barcoding reveal regulators of
+tumor-immune interactions"** (Du, Kohno, Wang, Papanicolaou, Vaughan-Jackson, Daigh, Peng, Spees,
+McCormick, Diehl, Bintu, Qiu, Satpathy, Bassik; corresponding author Michael Bassik, Stanford;
+posted 18 September 2026). **Yes — it is a proximity-labelling / interaction-recording technology.**
+It introduces **match-seq**, an imaging-free, sequencing-based cell-proximity tracing system in
+which virus-like particles transmit barcoded mRNAs from sender cells to nearby receiver cells; the
+spatial linkage is then reconstructed computationally from barcode sequencing after tissue
+dissociation. Applied in a syngeneic murine tumour model, it labels all immune lineages and
+reconstructs cell-type niches recapitulating known tumour spatial biology, and is coupled to pooled
+CRISPR + scRNA-seq to screen for cancer-cell genes that reshape the local microenvironment
+(Tgfb1 → CD8 T cells/macrophages, Traf7 → CD4 T cells, Nectin3 → NK cells; validated by in vivo
+immune depletion).
+
+**Ground truth it yields.** (i) An experimentally measured neighbour graph — barcode sharing between
+sender and receiver cells — with a matched single-cell transcriptome per cell, i.e. *observed*
+proximity to score predicted CCC against; and (ii) uniquely among the entries here, a **causal**
+layer: perturbation of a sender gene with a measured readout on the local microenvironment
+composition and state. That second layer is what a CCC model would need to be benchmarked on
+*interventionally* rather than correlatively.
+
+**Caveats.** Preprint, not peer reviewed. Barcode transfer reports a proximity neighbourhood, not a
+molecularly specified receptor–ligand engagement, and the "spatial" reconstruction is inferred after
+dissociation rather than measured in situ. Mouse tumour model only. Requires engineered sender cells
+(VLP machinery + barcode), so it is not applicable to primary human tissue.
+
+**Flags.** Title, author list, DOI, posting date, abstract VERIFIED via the bioRxiv details API.
+Author *given names* were taken from the article page (the API returns initials only) —
+**VERIFIED via page fetch, not via Crossref**; bioRxiv has no Crossref-registered author list for
+this record. Middle initials are deliberately omitted because no fetched source supplied them.
+No journal volume/pages exist (preprint).
+
+---
+
+## 4. Moleculent — **NO PRIMARY PUBLICATION FOUND** (no .bib entry)
+
+**Finding.** Moleculent AB (Stockholm, founded 2021; CEO Olle Ericsson, CTO Fredrik Roos, both ex-
+Vanadis Diagnostics; $26M Series A June 2024 led by ARCH Venture Partners + Eir Ventures, extended
+by $20M; "Techstart" early-access programme announced November 2025) describes an imaging-based,
+high-plex platform that measures **cell–cell protein (ligand–receptor) interactions directly in
+intact FFPE human tissue**, with an initial immuno-oncology focus. This is exactly the kind of in
+situ CCC ground truth the research plan wants. **However, as of 2026-09-21 I could not find any
+primary publication or preprint describing it.** Searches run: Crossref, Europe PMC
+(`"Moleculent"`, `AFF:"Moleculent"`, `AUTH:"Ericsson O"` 2024–2026 — all returned only fuzzy,
+unrelated hits, i.e. zero true matches), bioRxiv, and the company's own site (no publications page,
+no named assay). The technology appears to be **pre-publication / early access only**.
+
+**Two conflations to avoid.**
+- **Molecular Pixelation (MPX) is *not* Moleculent.** MPX is from **Pixelgen Technologies AB**, a
+  different Stockholm company (author affiliations on the paper: "Pixelgen Technologies AB,
+  Stockholm, Sweden"; competing-interests statement: "All authors are employees or advisors to
+  Pixelgen Technologies, which commercializes products based on Molecular Pixelation"). It is
+  entered below as `karlsson2024molecularpixelation` for completeness, but it is a *different*
+  company and a *different* problem (see §5).
+- The bioRxiv preprint "Multiomic Spatial Imaging Assay (MSIA)" (doi 10.64898/2026.02.26.708124),
+  which surfaces on searches for high-plex in situ protein–protein interaction detection in FFPE, is
+  from **Advanced Cell Diagnostics / Bio-Techne** (corresponding author Li-Chong Wang), *not*
+  Moleculent. Checked and excluded.
+
+**Flags.** Company facts (founders, funding, platform description, early-access programme) sourced
+from Businesswire/GenomeWeb/GenEng press coverage and moleculent.com — **UNVERIFIED against any
+peer-reviewed or preprint source.** Existence of a primary publication: **searched and not found**;
+treat as "no citable publication yet" rather than as proof of absence. Recommend re-checking before
+submission.
+
+---
+
+## 5. `karlsson2024molecularpixelation` — Molecular Pixelation (MPX), Pixelgen Technologies
+
+**What it is.** An optics-free, DNA-sequencing-based method for *subcellular* spatial proteomics of
+single cells: antibody–oligonucleotide conjugates are assembled into >1,000 DNA "pixel"
+neighbourhoods per cell, yielding a 3D spatial proteomics network over 76 surface proteins per cell.
+
+**Ground truth it yields.** Relative spatial organisation and co-localisation/polarisation of
+*surface receptors on a single cell* — useful for the receptor-availability and receptor-clustering
+assumptions that CCC methods make implicitly, and as an orthogonal check on whether a receptor is
+actually presented at a contact face.
+
+**Caveats.** This is **within-cell** surface topology, not **between-cell** contact: it is measured
+on dissociated single cells in suspension, not in tissue, and it does not record which cell a given
+cell was touching. It is therefore adjacent ground truth, not a CCC benchmark. Include only if the
+plan discusses receptor-presentation assumptions; do not present it as tissue CCC ground truth.
+
+**Flags.** All bibliographic fields VERIFIED (Crossref: Nature Methods 21(6):1044–1052, 8 May 2024,
+10.1038/s41592-024-02268-9). Affiliation VERIFIED from PMC11166577.
+
+---
+
+## 6. `liu2026cytosignal` — CytoSignal (Welch lab)
+
+**Key correction to the brief.** The paper is **Liu et al., *Nature Genetics* 58(6):1396–1408
+(2026)**, doi `10.1038/s41588-026-02624-9` — first author **Jialin Liu**, senior author Joshua D.
+Welch. It is *not* Zhao et al. and *not* Nature Methods/Nature Biotechnology. The bib key is
+therefore `liu2026cytosignal`, not `zhao2026cytosignal`. (Preprint: bioRxiv 10.1101/2024.03.08.584153.)
+
+**What it is.** A method that scores ligand–receptor signalling at *cellular resolution and specific
+tissue locations* from spatial transcriptomics, on the premise that signalling occurs where ligand
+and receptor are co-expressed in spatial proximity. It separates contact-dependent from diffusible
+interactions, detects signalling gradients and signalling-associated genes, supports differential
+signalling across samples, and infers temporal dynamics per location.
+
+**What the ground truth actually is — also a correction.** It is **not** a compiled database of
+literature-validated ligand–receptor pairs, and **not** knockout/perturbation data. It is an
+**orthogonal in situ imaging assay**: *proximity ligation assay (PLA)*, which fluoresces only when
+the two proteins are within ~40 nm. The authors ran paired experiments on **spatially adjacent
+sections of the same mouse embryo** — Visium HD spatial transcriptomics on one section, PLA on the
+adjacent one — for **five ligand–receptor pairs: Igf2–Igf2r, Spp1–Cd44, Fgf8–Fgfr1, Efna3–Epha5,
+Dll1–Notch1**. PLA fluorescence was registered onto the transcriptomic coordinates by computational
+image registration, and methods were scored by the AUC of a classifier predicting binary PLA
+positivity per region. CytoSignal outperformed CellChat, CellPhoneDB, LIANA+ and SpatialDM across
+tissue domains. **This is arguably the most directly reusable location-resolved LR ground truth
+currently published**, and it is a protein-level measurement, independent of the transcriptomic
+input the methods use.
+
+**Caveats.** Only five LR pairs; one tissue (mouse embryo); PLA is measured on an *adjacent* section,
+so registration error and section-to-section biological variation propagate into the label; PLA
+positivity is binary and antibody-dependent (sensitivity/specificity per pair are not uniform);
+"within 40 nm" reports proximity of the two proteins, not productive signalling. Ground-truth scale
+is small, so benchmark variance will be high.
+
+**Flags.** All bibliographic fields VERIFIED (Crossref: Nature Genetics 58(6):1396–1408, June 2026;
+14 authors as listed). The preprint DOI in the `note` field (10.1101/2024.03.08.584153) VERIFIED via
+the bioRxiv API (posted 13 March 2024). Ground-truth description VERIFIED from the PMC full text
+(PMC13263138).
+
+---
+
+## 7. `giladi2020picseq` — PIC-seq
+
+**What it is.** Physically Interacting Cell sequencing: doublets of physically interacting cells are
+deliberately sorted (rather than discarded as artefacts) and sequenced, and a computational model
+deconvolves each PIC into its constituent cell types and identifies the crosstalk-induced expression
+that is specific to the interacting state. Applied to T cell–dendritic cell interactions in vitro
+and in vivo, mapping interaction preferences in mouse draining lymph nodes.
+
+**Ground truth it yields.** An experimentally observed frequency table of *which cell types are
+physically found together*, plus the transcriptional signature attributable to being in contact.
+Useful both as a cell-pair-level benchmark and as a target for methods claiming to predict the
+downstream transcriptional consequence of communication.
+
+**Caveats.** Interactions must survive tissue dissociation and sorting, which biases strongly toward
+strong/durable adhesive pairs and against fragile or transient contacts; no spatial coordinates;
+doublet-vs-true-PIC ambiguity is handled statistically, not experimentally; no LR-pair resolution.
+
+**Flags.** All bibliographic fields VERIFIED (Crossref: Nature Biotechnology 38(5):629–637, 2020,
+10.1038/s41587-020-0442-2).
+
+---
+
+## 8. `boisset2018proximid` — ProximID
+
+**What it is.** Builds a cellular network from physical cell interactions by micro-dissecting small
+cell clusters from gently dissociated tissue and sequencing their constituent cells individually, so
+partners are known by construction and no prior knowledge of the participating cell types is needed.
+Recovered megakaryocyte–neutrophil and plasma cell–myeloblast/promyelocyte interactions in mouse
+bone marrow, and a Tac1⁺ enteroendocrine cell–Lgr5⁺ stem cell interaction in small-intestinal crypts.
+
+**Ground truth it yields.** An unbiased, discovery-mode physical interaction network over cell types
+in a tissue — a useful *recall* benchmark (does a CCC method recover experimentally observed
+preferential partnerships?) without the circularity of LR-database-derived "truth".
+
+**Caveats.** Low throughput (hundreds of cells, not atlas scale); same dissociation bias as PIC-seq;
+mouse tissue; no LR-pair resolution and no spatial coordinates. Now eight years old — use as a
+historical positive-control set rather than a primary benchmark.
+
+**Flags.** All bibliographic fields VERIFIED (Crossref: Nature Methods 15(7):547–553, 2018,
+10.1038/s41592-018-0009-z).
+
+---
+
+## 8b. Disclosure on the 2024–2026 recency requirement
+
+The brief asked for up to three further **2024–2026** technologies that record physical cell–cell
+contacts or ligand–receptor engagement *in situ*. **No such well-established technology was found
+beyond match-seq (§3) and uLIPSTIC (§2).** PIC-seq (2020) and ProximID (2018) are included instead,
+outside the requested window and dissociation-based rather than in situ, as the foundational
+precedents against which match-seq explicitly positions itself. A Europe PMC sweep of 2024–2026
+titles combining proximity labelling / cell–cell contact with tissue / in vivo / in situ (35 hits)
+returned almost exclusively *molecular* proximity labelling — TurboID/photocatalytic/µMap-style
+methods that map protein interactomes or subcellular proteomes (including µMap-FFPE, *JACS* 2025,
+which does work in FFPE tissue but profiles bait-proximal *proteins*, not cell partners) — none of
+which yields cell-pair ground truth. Treat the absence as "searched, nothing well established
+found", not as proof of absence.
+
+---
+
+## 9. TERRA and gene-panel heterogeneity (pointer for the atlas-limitation argument)
+
+`birk2026terra` (already in `research_plan.bib`, doi 10.64898/2026.07.29.741565, 112M cells —
+confirmed) does **not** harmonise the discordant feature spaces explicitly: it tokenises each gene by
+a gene-symbol token (plus value, gene-rank and cell-rank tokens; Fig. 1d) and absorbs the remaining
+panel discordance into a **batch metatoken** added during pretraining — the preprint states it
+"included a batch metatoken to help account for assay- and sample-specific technical variation,
+including differences in gene panels, detection sensitivity, and noise characteristics", supplied to
+both context and target streams and padded at inference. So panel heterogeneity is handled as a
+*nuisance batch effect inside a JEPA objective*, not as an explicit feature-space alignment — which
+is precisely the weak point to press on when arguing that such atlases cannot by themselves
+adjudicate ligand–receptor claims (a ligand or receptor absent from a panel is not distinguishable
+from one that is not expressed).
+
+**Flags.** Quoted mechanism VERIFIED from the preprint full text (`...741565v1.full`); cell count
+(112M) VERIFIED. Figure number (Fig. 1d) reported by the full-text fetch —
+**UNVERIFIED against the rendered figure itself**; cite the sentence, not the figure number, if
+precision matters.
+
+---
+
+## Summary of what each source can and cannot adjudicate
+
+| Entry | Contact pairs | LR-pair identity | In situ coordinates | Human tissue | Causal / perturbational |
+|---|---|---|---|---|---|
+| LIPSTIC | yes | fixed single pair | no | no (mouse) | no |
+| uLIPSTIC | yes (receptor-agnostic) | no | no | no (mouse) | no |
+| match-seq | yes (proximity) | no | inferred, not measured | no (mouse) | **yes** (CRISPR screen) |
+| PIC-seq | yes | no | no | no (mouse) | no |
+| ProximID | yes | no | no | no (mouse) | no |
+| CytoSignal / PLA | implied | **yes (5 pairs)** | **yes** | no (mouse embryo) | no |
+| MPX | no (within-cell) | no | subcellular only | yes (blood cells) | no |
+
+The gap this table exposes — no single resource gives contact pairs *and* LR identity *and* tissue
+coordinates *and* human tissue — is itself the argument for a benchmarking programme.
