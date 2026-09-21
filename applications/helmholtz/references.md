@@ -7,13 +7,13 @@ Posting requirement: "names and addresses of three references." Referee 3 decide
    Institute for Computational Biomedicine, Faculty of Medicine, Heidelberg University & Heidelberg University Hospital, BioQuant, Im Neuenheimer Feld 267, 69120 Heidelberg, Germany
    julio.saez@uni-heidelberg.de
 
-2. **Dr. Oliver Stegle** (postdoc supervisor; Interim Head of AI, EMBL & DKFZ) *[confirm]*
+2. **Dr. Oliver Stegle** (postdoc supervisor; Interim Head of AI, EMBL & DKFZ)
    Division of Computational Genomics and Systems Genetics (B260), German Cancer Research Center (DKFZ), Im Neuenheimer Feld 280, 69120 Heidelberg, Germany; and Genome Biology Unit, EMBL Heidelberg
    oliver.stegle@embl.de
 
 3. **Prof. Dr. Yvan Saeys** (senior independent academic; funded CZI collaboration partner on the NicheNet–LIANA+ programme)
    Data Mining and Modelling for Biomedicine group, VIB Center for Inflammation Research & Ghent University, Technologiepark-Zwijnaarde 71, 9052 Ghent, Belgium
-   yvan.saeys@ugent.be *[confirm]*
+   yvan.saeys@ugent.be
 
 <!-- INTERNAL coverage logic — never render into the submitted PDF.
 Supervisor of the descriptive/infrastructure phase (Saez-Rodriguez) · supervisor of the causal/AI phase and senior AI figure (Stegle) · senior independent academic outside the training lineage who can rank the candidate internationally and speaks from a funded collaboration, not courtesy (Saeys — note round-2 committee: he is a co-grantee, so the trio still has no fully arms-length evaluator; defensible, but see the fourth-referee note above). Alberto Valdeolivas (Senior Scientist, Roche Basel) remains available as an optional fourth/informal industry-adoption reference if AITHYRA invites additional names. -->

@@ -1,0 +1,575 @@
+---
+source_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Marr+C[Author]+AND+(Helmholtz[Affiliation]+OR+Munich[Affiliation]+OR+Neuherberg[Affiliation]+OR+Muenchen[Affiliation])+AND+2022:2026[dp]
+fetched: 2026-09-21
+conversion: PubMed E-utilities
+---
+
+## Illusion of competence: vision-language models provide confident but inaccurate explanations in cytological diagnostics.
+
+- **Authors:** Kukuljan I, Dasdelen MF, Schäfer J, Buck M, Götze KS, Marr C
+- **Journal:** Scientific reports
+- **Year:** 2026
+- **DOI:** 10.1038/s41598-026-60372-6
+- **PMID:** 42399356
+
+### Abstract
+
+Large vision-language models (LVLMs) have shown impressive image-understanding capabilities across domains. However, their suitability for cytomorphological diagnostics remains unclear. Here, we systematically evaluated four state-of-the-art generalist LVLMs, GPT-4o, Gemini-2.0, Llama-3.2, and DeepSeek-VL2, and three biomedical LVLMs, LLaVA-Med, CONCH, and BiomedCLIP, across key cytomorphology benchmarks, including peripheral blood cell classification, morphology assessment, bone marrow cell classification, and cervical smear malignancy detection. Performance was assessed under zero-shot, few-shot, and fine-tuned settings. In zero-shot and few-shot evaluations, LVLMs performed poorly, often approaching random performance. In peripheral blood cell classification, GPT-4o achieved a zero-shot F1 score of only 0.22 ± 0.02 and a few-shot F1 score of 0.36 ± 0.03. Even after fine-tuning, GPT-4o was outperformed by a lightweight, dedicated hematology model. Beyond classification accuracy, we assessed interpretability and trustworthiness. Although LVLMs generated textual justifications, these often reflected textbook knowledge rather than the actual morphological features present in the cell images. Expert evaluation showed that 30% of explanations for misclassified cells were rated as poor or misleading. While LVLMs could segment cellular structures such as nuclei and granules, they failed to reliably identify the image regions relevant to their classification decisions. Our findings underscore three major limitations of current LVLMs in cytomorphology: (1) low diagnostic accuracy, (2) poor generalizability across domains, and (3) unreliable explainability. These results suggest that LVLMs require substantial improvement before they can be used for cell-type classification and morphology characterization in diagnostic settings. Purpose-built models remain the more effective and trustworthy choice.
+
+---
+
+## UNICORN: a deep learning model for integrating multi-stain data in histopathology.
+
+- **Authors:** Koch V, Bauer S, Mahajan S, Lupperger V, Joner M, Schunkert H, Schnabel JA, von Scheidt M, Marr C
+- **Journal:** NPJ digital medicine
+- **Year:** 2026
+- **DOI:** 10.1038/s41746-026-02829-6
+- **PMID:** 42315948
+
+### Abstract
+
+The integration of multi-stain histopathology images through deep learning poses a significant challenge. Current approaches struggle with data heterogeneity and missing data, as concatenating multi-stain features may not effectively model stain-specific and cross-stain interactions. We introduce UNICORN (UNiversal stain Integration network for CORonary classificatioN), a two-stage, end-to-end trainable model comprising transformer self-attention blocks to process multi-stain histopathology for atherosclerosis severity prediction. The initial stage employs domain-specific expert models to extract features from each staining. An aggregation expert model then integrates features by learning their interactions. On a multi-class, multi-stain whole slide images (WSIs) dataset of atherosclerotic lesions from Munich Cardiovascular Studies Biobank (MISSION), UNICORN achieved a classification accuracy of 0.68, significantly outperforming state-of-the-art models. UNICORN identifies relevant tissue phenotypes across stainings and implicitly models disease progression. Its explainability and effectiveness in predicting atherosclerosis progression highlight the potential for broader applications in medical research and decision support.
+
+---
+
+## Learning to See Peaks: Attention-Based Feature Extraction for Automated Chromatographic Peak Detection.
+
+- **Authors:** Walter D, Helbig M, Weydanz B, Voltmer D, Bonfiglio JJ, Marr C, Großkopf T
+- **Journal:** ACS omega
+- **Year:** 2026
+- **DOI:** 10.1021/acsomega.6c01862
+- **PMID:** 42294175
+
+### Abstract
+
+Reliable peak detection remains a bottleneck in size-exclusion chromatography (SEC) as overlapping signals, drifting baselines, and analyst variability limit reproducibility. As SEC is a routine release and comparability assay and its interpretation depends on peak morphology and context, machine learning methods are well-suited to improve reproducibility at scale. We present the Peak Feature Extractor 1 (PFE-1), a one-dimensional encoder-only transformer trained on millions of synthetic chromatograms generated by a simulator statistically calibrated to routine SEC data from antibodies and related large-molecule species. PFE-1 outputs probabilistic region and event predictions that are aggregated through a transparent rule-based procedure into interpretable peak boxes. We evaluate PFE-1 on synthetic benchmarks and on a curated real SEC benchmark, reporting window-level precision/recall/F1 and box-level agreement via an intensity-weighted box loss aligned with routine process annotations. Across these evaluations, PFE-1 outperforms convolutional and derivative-based baselines, with the largest gains observed under more challenging overlap and morphology conditions. On synthetic data, PFE-1 achieves substantially higher box-level agreement than both baselines; on the curated real SEC benchmark, it likewise achieves the strongest box-level agreement while requiring no sample-specific inputs (e.g., expected peak windows). We provide a reproducible and extensible SEC-specific framework for chromatographic peak detection that supports a more consistent peak interpretation in routine analytical workflows.
+
+---
+
+## AI-based hematological malignancy prediction from peripheral blood smears in a large diagnostic laboratory cohort.
+
+- **Authors:** Dasdelen MF, Kukuljan I, Lienemann P, Ozlugedik F, Sadafi A, Hehr M, Spiekermann K, Pohlkamp C, Marr C
+- **Journal:** Leukemia
+- **Year:** 2026
+- **DOI:** 10.1038/s41375-026-02934-1
+- **PMID:** 41872501
+
+### Abstract
+
+(no abstract in PubMed record)
+
+---
+
+## Weakly supervised deep learning for cutaneous squamous and basal cell carcinoma in whole-slide histopathology.
+
+- **Authors:** Petzold A, Wessely A, Schliep S, Jiang H, Tran M, Koch EA, Peng T, Starz H, Berking C, Marr C, Heppt MV
+- **Journal:** The journal of pathology. Clinical research
+- **Year:** 2026
+- **DOI:** 10.1002/2056-4538.70082
+- **PMID:** 41841638
+
+### Abstract
+
+Distinguishing infiltrative basal cell carcinoma (BCC) from poorly differentiated cutaneous squamous cell carcinoma (cSCC) remains a significant histopathological challenge. Automated deep learning approaches hold promise for improving diagnostic reliability, yet robust external validation is essential. In this study, we developed a weakly supervised deep learning model to classify these diagnostically challenging subtypes and evaluated its generalizability across internal and external cohorts, as well as in comparison to a dermatopathology foundation model (HistoGPT). The model employed a multiple-instance learning framework (CLAM) using the histopathology-specific transformer Phikon for feature extraction from whole-slide images. Slide-level ground-truth diagnoses from the collected images (n = 335, University Hospital Erlangen) were derived from routine clinical practice and re-evaluated by two board-certified dermatopathologists. Performance was assessed on an internal test set of 84 whole-slide images (27 cSCC and 57 BCC) and two external datasets: Queensland cohort (n = 10, curated in-distribution cases) and the COBRA cohort (n = 200, broad, partly out-of-distribution cases). Model discrimination was quantified using ROC curves, while accuracy, sensitivity, and specificity were reported alongside 95% Wilson confidence intervals (CIs). On the internal test set, the model achieved perfect classification [area under the receiver operating characteristic (AUC) = 1.0; 100% accuracy, sensitivity, and specificity]. Similarly, strong performance was observed in the Queensland cohort (AUC = 1.0), although limited by sample size. In the more heterogeneous COBRA cohort, discrimination remained high (AUC = 0.923, 95% CI 0.885-0.961), requiring threshold adjustment to correct for marked calibration shift (balanced accuracy 86.5% at Youden's J). Attention heatmaps highlighted histologically meaningful regions. In zero-shot evaluation on the internal test set, HistoGPT achieved an overall accuracy of 77%, with high class-wise sensitivity for BCC (98%, 95% CI 91-100) but markedly reduced sensitivity for cSCC (33%, 95% CI 19-52). Fine-tuning a task-specific classifier on the HistoGPT backbone substantially improved performance, achieving near-perfect discrimination and 98% balanced accuracy. These findings demonstrate that weakly supervised deep learning enables highly accurate classification of diagnostically challenging BCC and cutaneous squamous cell carcinoma subtypes. However, reliable deployment across institutions necessitates careful calibration and domain adaptation, and even powerful foundation models such as HistoGPT benefit from targeted fine-tuning to ensure robust performance in dermatopathology.
+
+---
+
+## EchoVisuALL: From Echocardiography to Gene Discovery.
+
+- **Authors:** Galter I, Schneltzer E, Marr C, Spielmann N, Hrabě de Angelis M
+- **Journal:** bioRxiv : the preprint server for biology
+- **Year:** 2026
+- **DOI:** 10.64898/2026.02.18.706519
+- **PMID:** 41756822
+
+### Abstract
+
+Cardiovascular diseases are a major global health burden, demanding phenotyping frameworks that can match the scale and complexity of contemporary mouse genetics. Here, we introduce EchoVisuALL, an AI-enabled pipeline for automated high-throughput transthoracic echocardiography (TTE) coupling deep-learning-based left-ventricular segmentation with data reporting. Across 65,000 recordings from over 18,000 mice, including single-gene knockouts from the International Mouse Phenotyping Consortium, the framework quantified cardiac morphology and function with minimal operator dependency and high reliability, validated against an expert-curated gold standard dataset. By extracting quantitative parameters across the cardiac cycle, EchoVisuALL in combination with multi-dimensional clustering uncovered nonlinear phenotypic relationships and revealed 37 of 715 genes associated with significant cardiac abnormalities, encompassing well-known human disease genes as well as 12 previously unrecognized candidates, including Cep70, Acot12, Atp8b3, Eea1, Kctd2, and Tspan15. These genotype-phenotype associations are involved in myocardial energetics, membrane biology, and cardiac remodeling. We demonstrate the potential of EchoVisuALL to move beyond image segmentation by delivering a standardized, quantitative foundation for scalable downstream analyses, enabling the discovery of novel cardiac disease genes.
+
+---
+
+## A disease model resource reveals core principles of tissue-specific cancer evolution.
+
+- **Authors:** Mueller S, de Andrade Krätzig N, Tschurtschenthaler M, Silva MG, Thordsen C, Trozzo R, Simon P, Saab F, Kaltenbacher T, Zukowska M, Lucarelli D, Öllinger R, Griger J, Groß N, Groll T, Löprich J, Zaurito AE, Schömig LR, Bugter JM, Bärthel S, Falcomatà C, Strong A, Brandt C, Najajreh M, Papargyriou A, Maresch R, Collins KAN, Sailer D, Schneeweis C, Burger S, Fröhlich LM, Klement C, Belka A, Montero JJ, Jungwirth U, Reichert M, Moser M, Neumann J, Vassiliou G, Cadiñanos J, Varela I, Marr C, Alonso DF, Lollini PL, Zhao J, Chesler L, Isacke CM, Riedel A, Braun CJ, Sos ML, Beleggia F, Reinhardt HC, Musteanu M, Barbacid M, Quante M, Schmidt-Supprian M, Schneider G, Clare S, Lawley TD, Dougan G, Steiger K, Conte N, Bradley A, Rad L, Saur D, Rad R
+- **Journal:** Nature
+- **Year:** 2026
+- **DOI:** 10.1038/s41586-026-10187-2
+- **PMID:** 41741657
+
+### Abstract
+
+Oncogenes such as KRAS display marked tissue specificity in their oncogenic potential, genetic interactions and phenotypic effects, but the underlying determinants remain largely unresolved1-5. Here, to address these questions, we developed the Mouse Cancer Cell line Atlas, a broad-utility resource of 590 comprehensively characterized models across a wide range of entities ( www.mcca.tum.de ). Comparative and functional studies using this platform, human cohorts and mice identified core principles underlying tissue-specific evolution of KRAS-initiated cancers. First, we show that mutant KRAS dosage gain through allelic imbalance exerts cell-type-specific effects, defining its timing across entities, as exemplified by dosage-sensitive developmental reprogramming during pancreatic cancer initiation. Second, we highlight how tissue- and stage-specific evolutionary requirements, such as block of differentiation in the intestine, select for KRAS-collaborating alterations. Third, we identified context-dependent epistatic KRAS-tumour suppressor interactions and show that reciprocal dosage sensitivities dictate the entity-specific patterns of cancer gene alterations, explaining their frequency, zygosity and acquisition chronology. These findings highlight how intrinsic and acquired determinants instruct cancer evolution in different tissues, with predictable molecular patterns, temporal dynamics and phenotypic outcomes. Our study provides major advances towards a mechanistic understanding of cancer genomes.
+
+---
+
+## A large expert-annotated single-cell peripheral blood dataset for hematological disease diagnostics.
+
+- **Authors:** Shetab Boushehri S, Kazeminia S, Gruber A, Matek C, Spiekermann K, Pohlkamp C, Haferlach T, Marr C
+- **Journal:** Scientific data
+- **Year:** 2025
+- **DOI:** 10.1038/s41597-025-06223-x
+- **PMID:** 41219218
+
+### Abstract
+
+Distinguishing cell types in a peripheral blood smear is critical for diagnosing blood diseases, such as leukemia subtypes. Artificial intelligence can assist in automating cell classification. For training robust machine learning algorithms, however, large and well-annotated single-cell datasets are pivotal. Here, we introduce a large, publicly available, annotated peripheral blood dataset comprising >40,000 single-cell images classified into 18 classes by cytomorphology experts from the Munich Leukemia Laboratory, the largest European laboratory for blood disease diagnostics. By making our dataset publicly available, we provide a valuable resource for medical and machine learning researchers and support the development of reliable and clinically relevant diagnostic tools for diagnosing hematological diseases.
+
+---
+
+## Predictive value of preclinical models for CAR-T cell therapy clinical trials: a systematic review and meta-analysis.
+
+- **Authors:** Andreu-Sanz D, Gregor L, Carlini E, Scarcella D, Marr C, Kobold S
+- **Journal:** Journal for immunotherapy of cancer
+- **Year:** 2025
+- **DOI:** 10.1136/jitc-2025-011698
+- **PMID:** 40514065
+
+### Abstract
+
+Background Experimental mouse models are indispensable for the preclinical development of cancer immunotherapies, whereby complex interactions in the tumor microenvironment can be somewhat replicated. Despite the availability of diverse models, their predictive capacity for clinical outcomes remains largely unknown, posing a hurdle in the translation from preclinical to clinical success. Methods This study systematically reviews and meta-analyzes clinical trials of chimeric antigen receptor (CAR)-T cell monotherapies with their corresponding preclinical studies. Adhering to Preferred Reporting Items for Systematic Reviews and Meta-Analyses guidelines, a comprehensive search of PubMed and ClinicalTrials.gov was conducted, identifying 422 clinical trials and 3,157 preclinical studies. From these, 105 clinical trials and 180 preclinical studies, accounting for 44 and 131 distinct CAR constructs, respectively, were included. Results Patients' responses varied based on the target antigen, expectedly with higher efficacy and toxicity rates in hematological cancers. Preclinical data analysis revealed homogeneous and antigen-independent efficacy rates. Our analysis revealed that only 4% (n=12) of mouse studies used syngeneic models, highlighting their scarcity in research. Three logistic regression models were trained on CAR structures, tumor entities, and experimental settings to predict treatment outcomes. While the logistic regression model accurately predicted clinical outcomes based on clinical or preclinical features (Macro F1 and area under the curve (AUC)>0.8), it failed in predicting preclinical outcomes from preclinical features (Macro F1<0.5, AUC<0.6), indicating that preclinical studies may be influenced by experimental factors not accounted for in the model. Conclusion These findings underscore the need to better understand the experimental factors enhancing the predictive accuracy of mouse models in preclinical settings.
+
+---
+
+## Generating dermatopathology reports from gigapixel whole slide images with HistoGPT.
+
+- **Authors:** Tran M, Schmidle P, Guo RR, Wagner SJ, Koch V, Lupperger V, Novotny B, Murphree DH, Hardway HD, D'Amato M, Lefkes J, Geijs DJ, Feuchtinger A, Böhner A, Kaczmarczyk R, Biedermann T, Amir AL, Mooyaart AL, Ciompi F, Litjens G, Wang C, Comfere NI, Eyerich K, Braun SA, Marr C, Peng T
+- **Journal:** Nature communications
+- **Year:** 2025
+- **DOI:** 10.1038/s41467-025-60014-x
+- **PMID:** 40419470
+
+### Abstract
+
+Histopathology is the reference standard for diagnosing the presence and nature of many diseases, including cancer. However, analyzing tissue samples under a microscope and summarizing the findings in a comprehensive pathology report is time-consuming, labor-intensive, and non-standardized. To address this problem, we present HistoGPT, a vision language model that generates pathology reports from a patient's multiple full-resolution histology images. It is trained on 15,129 whole slide images from 6705 dermatology patients with corresponding pathology reports. The generated reports match the quality of human-written reports for common and homogeneous malignancies, as confirmed by natural language processing metrics and domain expert analysis. We evaluate HistoGPT in an international, multi-center clinical study and show that it can accurately predict tumor subtypes, tumor thickness, and tumor margins in a zero-shot fashion. Our model demonstrates the potential of artificial intelligence to assist pathologists in evaluating, reporting, and understanding routine dermatopathology cases.
+
+---
+
+## The role of single cell transcriptomics for efficacy and toxicity profiling of chimeric antigen receptor (CAR) T cell therapies.
+
+- **Authors:** Thomas M, Brabenec R, Gregor L, Andreu-Sanz D, Carlini E, Müller PJ, Gottschlich A, Simnica D, Kobold S, Marr C
+- **Journal:** Computers in biology and medicine
+- **Year:** 2025
+- **DOI:** 10.1016/j.compbiomed.2025.110332
+- **PMID:** 40375426
+
+### Abstract
+
+CAR T cells are genetically modified T cells that target specific epitopes. CAR T cell therapy has proven effective in difficult-to-treat B cell cancers and is now expanding into hematology and solid tumors. To date, approved CAR therapies target only two specific epitopes on cancer cells. Identifying more suitable targets is challenged by the lack of truly cancer-specific structures and the potential for on-target off-tumor toxicity. We analyzed gene expression of potential targets in single-cell data from cancer and healthy tissues. Because safety and efficacy can ultimately only be defined clinically, we selected approved and investigational targets for which clinical trail data are available. We generated atlases using >300,000 cells from 48 patients with follicular lymphoma, multiple myeloma, and B-cell acute lymphoblastic leukemia, and integrated over 3 million cells from 35 healthy tissues, harmonizing datasets from over 300 donors. To contextualize findings, we compared target expression patterns with outcome data from clinical trials, linking target profiles to efficacy and toxicity, and ranked 15 investigational targets based on their similarity to approved ones. Target expression did not significantly correlate with reported clinical toxicities in patients undergoing therapy. This may be attributed to the intricate interplay of patient-specific variables, the limited amount of metadata, and the complexity underlying toxicity. Nevertheless, our study serves as a resource for retrospective and prospective target evaluation to improve the safety and efficacy of CAR therapies.
+
+---
+
+## Deep learning model DeepNeo predicts neointimal tissue characterization using optical coherence tomography.
+
+- **Authors:** Koch V, Holmberg O, Blum E, Sancar E, Aytekin A, Seguchi M, Xhepa E, Wiebe J, Cassese S, Kufner S, Kessler T, Sager H, Voll F, Rheude T, Lenz T, Kastrati A, Schunkert H, Schnabel JA, Joner M, Marr C, Nicol P
+- **Journal:** Communications medicine
+- **Year:** 2025
+- **DOI:** 10.1038/s43856-025-00835-5
+- **PMID:** 40247001
+
+### Abstract
+
+BACKGROUND: Accurate interpretation of optical coherence tomography (OCT) pullbacks is critical for assessing vascular healing after percutaneous coronary intervention (PCI). Manual analysis is time-consuming and subjective, highlighting the need for a fully automated solution.
+
+METHODS: In this study, 1148 frames from 92 OCT pullbacks were manually annotated to classify neointima as homogeneous, heterogeneous, neoatherosclerosis, or not analyzable on a quadrant level. Stent and lumen contours were annotated in 305 frames for segmentation of the lumen, stent struts, and neointima. We used these annotations to train a deep learning algorithm called DeepNeo. Performance was further evaluated in an animal model (male New Zealand White Rabbits) of neoatherosclerosis using co-registered histopathology images as the gold standard.
+
+RESULTS: DeepNeo demonstrates a strong classification performance for neointimal tissue, achieving an overall accuracy of 75%, which is comparable to manual classification accuracy by two clinical experts (75% and 71%). In the animal model of neoatherosclerosis, DeepNeo achieves an accuracy of 87% when compared with histopathological findings. For segmentation tasks in human pullbacks, the algorithm shows strong performance with mean Dice overlap scores of 0.99 for the lumen, 0.66 for stent struts, and 0.86 for neointima.
+
+CONCLUSIONS: To the best of our knowledge, DeepNeo is the first deep learning algorithm enabling fully automated segmentation and classification of neointimal tissue with performance comparable to human experts. It could standardize vascular healing assessments after PCI, support therapeutic decisions, and improve risk detection for cardiac events.
+
+---
+
+## Dissection of single-cell landscapes for the development of chimeric antigen receptor T cells in Hodgkin lymphoma.
+
+- **Authors:** Gottschlich A, Grünmeier R, Hoffmann GV, Nandi S, Kavaka V, Müller PJ, Jobst J, Oner A, Kaiser R, Gärtig J, Piseddu I, Frenz-Wiessner S, Fairley SD, Schulz H, Igl V, Janert TA, Di Fina L, Mulkers M, Thomas M, Briukhovetska D, Simnica D, Carlini E, Tsiverioti CA, Trefny MP, Lorenzini T, Märkl F, Mesquita P, Brabenec R, Strzalkowski T, Stock S, Michaelides S, Hellmuth J, Thelen M, Reinke S, Klapper W, Gelebart PF, Nicolai L, Marr C, Beltrán E, Megens RTA, Klein C, Baran-Marszak F, Rosenwald A, von Bergwelt-Baildon M, Bröckelmann PJ, Endres S, Kobold S
+- **Journal:** Blood
+- **Year:** 2025
+- **DOI:** 10.1182/blood.2023022197
+- **PMID:** 40178843
+
+### Abstract
+
+The success of targeted therapies for hematological malignancies has heralded their potential as both salvage treatment and early treatment lines, reducing the need for high-dose, intensive, and often toxic chemotherapeutic regimens. For young patients with classic Hodgkin lymphoma (cHL), immunotherapies provide the possibility to lessen long-term, treatment-related toxicities. However, suitable therapeutic targets are lacking. By integrating single-cell dissection of the tumor landscape and an in-depth, single-cell-based off-tumor antigen prediction, we identify CD86 as a promising therapeutic target in cHL. CD86 is highly expressed on Hodgkin and Reed-Sternberg cancer cells and cHL-specific tumor-associated macrophages. We reveal CD86-CTLA-4 as a key suppressive pathway in cHL, driving T-cell exhaustion. Cellular therapies targeting CD86 had extraordinary efficacy in vitro and in vivo and were safe in immunocompetent mouse models without compromising bacterial host defense in sepsis models. Our results prove the potential value of anti-CD86 immunotherapies for treating cHL.
+
+---
+
+## Protocol for SUM-PAINT spatial proteomic imaging generating neuronal architecture maps in rat hippocampal neurons.
+
+- **Authors:** Unterauer EM, Schentarra EM, Jevdokimenko K, Boushehri SS, Marr C, Opazo F, Fornasiero EF, Jungmann R
+- **Journal:** STAR protocols
+- **Year:** 2025
+- **DOI:** 10.1016/j.xpro.2025.103637
+- **PMID:** 40048420
+
+### Abstract
+
+To unravel the complexity of biological processes, it is necessary to resolve the underlying protein organization down to single proteins. Here, we present a protocol for secondary label-based unlimited multiplexed DNA-PAINT (SUM-PAINT), a DNA-PAINT-based super-resolution microscopy technique that is capable of resolving virtually unlimited protein species with single-protein resolution. We describe the steps to prepare neuronal cultures, troubleshoot and conduct SUM-PAINT experiments, and analyze the resulting feature-rich neuronal cell atlases using unsupervised machine learning approaches. For complete details on the use and execution of this protocol, please refer to Unterauer et al.1.
+
+---
+
+## FL-W3S: Cross-domain federated learning for weakly supervised semantic segmentation of white blood cells.
+
+- **Authors:** Madni HA, Umer RM, Zottin S, Marr C, Foresti GL
+- **Journal:** International journal of medical informatics
+- **Year:** 2025
+- **DOI:** 10.1016/j.ijmedinf.2025.105806
+- **PMID:** 39854783
+
+### Abstract
+
+BACKGROUND: Segmentation models for clinical data experience severe performance degradation when trained on a single client from one domain and distributed to other clients from different domain. Federated Learning (FL) provides a solution by enabling multi-party collaborative learning without compromising the confidentiality of clients' private data.
+
+METHODS: In this paper, we propose a cross-domain FL method for Weakly Supervised Semantic Segmentation (FL-W3S) of white blood cells in microscopic images. We perform model training on multiple clients with different data distributions to obtain a global aggregated model using only image-level class labels for semantic segmentation of white blood cells. A multi-class token transformer model learns the relationship between patch tokens and class tokens during collaborative learning and generates class-specific localization maps for mask predictions. To rectify the localization maps, we use patch-level pairwise affinity obtained from patch-to-patch transformer attention.
+
+RESULTS: We evaluate performance of the proposed semantic segmentation method on two different datasets of white blood cells from different domains. Our experimental results show that for two datasets, there is 2.56% and 1.39% increase in performance of the proposed method over existing state-of-the-art methods.
+
+CONCLUSION: The combination of federated learning for collaborative model training while preserving data privacy, alongside white blood cell segmentation techniques for precise cell identification, enhances diagnostic accuracy and personalized treatment strategies in clinical applications, particularly in hematology and pathology. More specifically, it involves isolating white blood cell from blood smear for further analysis such as automated blood cell counting, morphological analysis, cell classification, disease diagnosis and monitoring.
+
+---
+
+## Cytosolic S100A8/A9 promotes Ca2+ supply at LFA-1 adhesion clusters during neutrophil recruitment.
+
+- **Authors:** Napoli M, Immler R, Rohwedder I, Lupperger V, Pfabe J, Gonzalez Pisfil M, Yevtushenko A, Vogl T, Roth J, Salvermoser M, Dietzel S, Slak Rupnik M, Marr C, Walzog B, Sperandio M, Pruenster M
+- **Journal:** eLife
+- **Year:** 2024
+- **DOI:** 10.7554/eLife.96810
+- **PMID:** 39699020
+
+### Abstract
+
+S100A8/A9 is an endogenous alarmin secreted by myeloid cells during many acute and chronic inflammatory disorders. Despite increasing evidence of the proinflammatory effects of extracellular S100A8/A9, little is known about its intracellular function. Here, we show that cytosolic S100A8/A9 is indispensable for neutrophil post-arrest modifications during outside-in signaling under flow conditions in vitro and neutrophil recruitment in vivo, independent of its extracellular functions. Mechanistically, genetic deletion of S100A9 in mice caused dysregulated Ca2+ signatures in activated neutrophils resulting in reduced Ca2+ availability at the formed LFA-1/F-actin clusters with defective β2 integrin outside-in signaling during post-arrest modifications. Consequently, we observed impaired cytoskeletal rearrangement, cell polarization, and spreading, as well as cell protrusion formation in S100a9-/- compared to wildtype (WT) neutrophils, making S100a9-/- cells more susceptible to detach under flow, thereby preventing efficient neutrophil recruitment and extravasation into inflamed tissue.
+
+---
+
+## Mathematical multi-compartment modeling of chronic lymphocytic leukemia cell kinetics under ibrutinib.
+
+- **Authors:** Schulz M, Bleser S, Groels M, Bošnački D, Burger JA, Chiorazzi N, Marr C
+- **Journal:** iScience
+- **Year:** 2024
+- **DOI:** 10.1016/j.isci.2024.111242
+- **PMID:** 39628582
+
+### Abstract
+
+The Bruton tyrosine kinase inhibitor ibrutinib is an effective treatment for patients with chronic lymphocytic leukemia (CLL). While it rapidly reduces lymph node and spleen size, it initially increases the number of lymphocytes in the blood due to cell redistribution. A previously published mathematical model described and quantified those cell kinetics. Here, we propose an alternative mechanistic model that outperforms the previous model in 26 of 29 patients. Our model introduces constant subcompartments for healthy lymphocytes and benign tissue and treats spleen and lymph nodes as separate compartments. This three-compartment model (comprising blood, spleen, and lymph nodes) performed significantly better in patients without a mutation in the IGHV gene, indicating a diverse response to ibrutinib for cells residing in lymph nodes and spleen. Additionally, high ZAP-70 expression was linked to less cell death in the spleen. Overall, our study enhances understanding of CLL genetics and patient response to ibrutinib and provides a framework applicable to the study of similar drugs.
+
+---
+
+## Lysis of human erythrocytes due to Piezo1-dependent cytosolic calcium overload as a mechanism of circulatory removal.
+
+- **Authors:** Kuck L, McNamee AP, Bordukova M, Sadafi A, Marr C, Peart JN, Simmonds MJ
+- **Journal:** Proceedings of the National Academy of Sciences of the United States of America
+- **Year:** 2024
+- **DOI:** 10.1073/pnas.2407765121
+- **PMID:** 39207733
+
+### Abstract
+
+Hematopoietic stem cells surrender organelles during differentiation, leaving mature red blood cells (RBC) devoid of transcriptional machinery and mitochondria. The resultant absence of cellular repair capacity limits RBC circulatory longevity, and old cells are removed from circulation. The specific age-dependent alterations required for this apparently targeted removal of RBC, however, remain elusive. Here, we assessed the function of Piezo1, a stretch-activated transmembrane cation channel, within subpopulations of RBC isolated based on physical properties associated with aging. We subsequently investigated the potential role of Piezo1 in RBC removal, using pharmacological and mechanobiological approaches. Dense (old) RBC were separated from whole blood using differential density centrifugation. Tolerance of RBC to mechanical forces within the physiological range was assessed on single-cell and cell population levels. Expression and function of Piezo1 were investigated in separated RBC populations by monitoring accumulation of cytosolic Ca2+ and changes in cell morphology in response to pharmacological Piezo1 stimulation and in response to physical forces. Despite decreased Piezo1 activity with increasing cell age, tolerance to prolonged Piezo1 stimulation declined sharply in older RBC, precipitating lysis. Cell lysis was immediately preceded by an acute reversal of density. We propose a Piezo1-dependent mechanism by which RBC may be removed from circulation: Upon adherence of these RBC to other tissues, they are uniquely exposed to prolonged mechanical forces. The resultant sustained activation of Piezo1 leads to a net influx of Ca2+, overpowering the Ca2+-removal capacity of specifically old RBC, which leads to reversal of ion gradients, dysregulated cell hydration, and ultimately osmotic lysis.
+
+---
+
+## Expert-level detection of M-proteins in serum protein electrophoresis using machine learning.
+
+- **Authors:** Elfert E, Kaminski WE, Matek C, Hoermann G, Axelsen EW, Marr C, Piehler AP
+- **Journal:** Clinical chemistry and laboratory medicine
+- **Year:** 2024
+- **DOI:** 10.1515/cclm-2024-0222
+- **PMID:** 38879789
+
+### Abstract
+
+OBJECTIVES: Serum protein electrophoresis (SPE) in combination with immunotyping (IMT) is the diagnostic standard for detecting monoclonal proteins (M-proteins). However, interpretation of SPE and IMT is weakly standardized, time consuming and investigator dependent. Here, we present five machine learning (ML) approaches for automated detection of M-proteins on SPE on an unprecedented large and well-curated data set and compare the performance with that of laboratory experts.
+
+METHODS: SPE and IMT were performed in serum samples from 69,722 individuals from Norway. IMT results were used to label the samples as M-protein present (positive, n=4,273) or absent (negative n=65,449). Four feature-based ML algorithms and one convolutional neural network (CNN) were trained on 68,722 randomly selected SPE patterns to detect M-proteins. Algorithm performance was compared to that of an expert group of clinical pathologists and laboratory technicians (n=10) on a test set of 1,000 samples.
+
+RESULTS: The random forest classifier showed the best performance (F1-Score 93.2 %, accuracy 99.1 %, sensitivity 89.9 %, specificity 99.8 %, positive predictive value 96.9 %, negative predictive value 99.3 %) and outperformed the experts (F1-Score 61.2 ± 16.0 %, accuracy 89.2 ± 10.2 %, sensitivity 94.3 ± 2.8 %, specificity 88.9 ± 10.9 %, positive predictive value 47.3 ± 16.2 %, negative predictive value 99.5 ± 0.2 %) on the test set. Interestingly the performance of the RFC saturated, the CNN performance increased steadily within our training set (n=68,722).
+
+CONCLUSIONS: Feature-based ML systems are capable of automated detection of M-proteins on SPE beyond expert-level and show potential for use in the clinical laboratory.
+
+---
+
+## CD37 is a safe chimeric antigen receptor target to treat acute myeloid leukemia.
+
+- **Authors:** Caulier B, Joaquina S, Gelebart P, Dowling TH, Kaveh F, Thomas M, Tandaric L, Wernhoff P, Katyayini NU, Wogsland C, Gjerstad ME, Fløisand Y, Kvalheim G, Marr C, Kobold S, Enserink JM, Gjertsen BT, McCormack E, Inderberg EM, Wälchli S
+- **Journal:** Cell reports. Medicine
+- **Year:** 2024
+- **DOI:** 10.1016/j.xcrm.2024.101572
+- **PMID:** 38754420
+
+### Abstract
+
+Acute myeloid leukemia (AML) is characterized by the accumulation of immature myeloid cells in the bone marrow and the peripheral blood. Nearly half of the AML patients relapse after standard induction therapy, and new forms of therapy are urgently needed. Chimeric antigen receptor (CAR) T therapy has so far not been successful in AML due to lack of efficacy and safety. Indeed, the most attractive antigen targets are stem cell markers such as CD33 or CD123. We demonstrate that CD37, a mature B cell marker, is expressed in AML samples, and its presence correlates with the European LeukemiaNet (ELN) 2017 risk stratification. We repurpose the anti-lymphoma CD37CAR for the treatment of AML and show that CD37CAR T cells specifically kill AML cells, secrete proinflammatory cytokines, and control cancer progression in vivo. Importantly, CD37CAR T cells display no toxicity toward hematopoietic stem cells. Thus, CD37 is a promising and safe CAR T cell AML target.
+
+---
+
+## Spatial proteomics in neurons at single-protein resolution.
+
+- **Authors:** Unterauer EM, Shetab Boushehri S, Jevdokimenko K, Masullo LA, Ganji M, Sograte-Idrissi S, Kowalewski R, Strauss S, Reinhardt SCM, Perovic A, Marr C, Opazo F, Fornasiero EF, Jungmann R
+- **Journal:** Cell
+- **Year:** 2024
+- **DOI:** 10.1016/j.cell.2024.02.045
+- **PMID:** 38552614
+
+### Abstract
+
+To understand biological processes, it is necessary to reveal the molecular heterogeneity of cells by gaining access to the location and interaction of all biomolecules. Significant advances were achieved by super-resolution microscopy, but such methods are still far from reaching the multiplexing capacity of proteomics. Here, we introduce secondary label-based unlimited multiplexed DNA-PAINT (SUM-PAINT), a high-throughput imaging method that is capable of achieving virtually unlimited multiplexing at better than 15 nm resolution. Using SUM-PAINT, we generated 30-plex single-molecule resolved datasets in neurons and adapted omics-inspired analysis for data exploration. This allowed us to reveal the complexity of synaptic heterogeneity, leading to the discovery of a distinct synapse type. We not only provide a resource for researchers, but also an integrated acquisition and analysis workflow for comprehensive spatial proteomics at single-protein resolution.
+
+---
+
+## PXPermute reveals staining importance in multichannel imaging flow cytometry.
+
+- **Authors:** Shetab Boushehri S, Kornivetc A, Winter DJE, Kazeminia S, Essig K, Schmich F, Marr C
+- **Journal:** Cell reports methods
+- **Year:** 2024
+- **DOI:** 10.1016/j.crmeth.2024.100715
+- **PMID:** 38412831
+
+### Abstract
+
+Imaging flow cytometry (IFC) allows rapid acquisition of numerous single-cell images per second, capturing information from multiple fluorescent channels. However, the traditional process of staining cells with fluorescently labeled conjugated antibodies for IFC analysis is time consuming, expensive, and potentially harmful to cell viability. To streamline experimental workflows and reduce costs, it is crucial to identify the most relevant channels for downstream analysis. In this study, we introduce PXPermute, a user-friendly and powerful method for assessing the significance of IFC channels, particularly for cell profiling. Our approach evaluates channel importance by permuting pixel values within each channel and analyzing the resulting impact on machine learning or deep learning models. Through rigorous evaluation of three multichannel IFC image datasets, we demonstrate PXPermute's potential in accurately identifying the most informative channels, aligning with established biological knowledge. PXPermute can assist biologists with systematic channel analysis, experimental design optimization, and biomarker identification.
+
+---
+
+## Generation of complex bone marrow organoids from human induced pluripotent stem cells.
+
+- **Authors:** Frenz-Wiessner S, Fairley SD, Buser M, Goek I, Salewskij K, Jonsson G, Illig D, Zu Putlitz B, Petersheim D, Li Y, Chen PH, Kalauz M, Conca R, Sterr M, Geuder J, Mizoguchi Y, Megens RTA, Linder MI, Kotlarz D, Rudelius M, Penninger JM, Marr C, Klein C
+- **Journal:** Nature methods
+- **Year:** 2024
+- **DOI:** 10.1038/s41592-024-02172-2
+- **PMID:** 38374263
+
+### Abstract
+
+The human bone marrow (BM) niche sustains hematopoiesis throughout life. We present a method for generating complex BM-like organoids (BMOs) from human induced pluripotent stem cells (iPSCs). BMOs consist of key cell types that self-organize into spatially defined three-dimensional structures mimicking cellular, structural and molecular characteristics of the hematopoietic microenvironment. Functional properties of BMOs include the presence of an in vivo-like vascular network, the presence of multipotent mesenchymal stem/progenitor cells, the support of neutrophil differentiation and responsiveness to inflammatory stimuli. Single-cell RNA sequencing revealed a heterocellular composition including the presence of a hematopoietic stem/progenitor (HSPC) cluster expressing genes of fetal HSCs. BMO-derived HSPCs also exhibited lymphoid potential and a subset demonstrated transient engraftment potential upon xenotransplantation in mice. We show that the BMOs could enable the modeling of hematopoietic developmental aspects and inborn errors of hematopoiesis, as shown for human VPS45 deficiency. Thus, iPSC-derived BMOs serve as a physiologically relevant in vitro model of the human BM microenvironment to study hematopoietic development and BM diseases.
+
+---
+
+## Built to Last? Reproducibility and Reusability of Deep Learning Algorithms in Computational Pathology.
+
+- **Authors:** Wagner SJ, Matek C, Shetab Boushehri S, Boxberg M, Lamm L, Sadafi A, Winter DJE, Marr C, Peng T
+- **Journal:** Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc
+- **Year:** 2024
+- **DOI:** 10.1016/j.modpat.2023.100350
+- **PMID:** 37827448
+
+### Abstract
+
+Recent progress in computational pathology has been driven by deep learning. While code and data availability are essential to reproduce findings from preceding publications, ensuring a deep learning model's reusability is more challenging. For that, the codebase should be well-documented and easy to integrate into existing workflows and models should be robust toward noise and generalizable toward data from different sources. Strikingly, only a few computational pathology algorithms have been reused by other researchers so far, let alone employed in a clinical setting. To assess the current state of reproducibility and reusability of computational pathology algorithms, we evaluated peer-reviewed articles available in PubMed, published between January 2019 and March 2021, in 5 use cases: stain normalization; tissue type segmentation; evaluation of cell-level features; genetic alteration prediction; and inference of grading, staging, and prognostic information. We compiled criteria for data and code availability and statistical result analysis and assessed them in 160 publications. We found that only one-quarter (41 of 160 publications) made code publicly available. Among these 41 studies, three-quarters (30 of 41) analyzed their results statistically, half of them (20 of 41) released their trained model weights, and approximately a third (16 of 41) used an independent cohort for evaluation. Our review is intended for both pathologists interested in deep learning and researchers applying algorithms to computational pathology challenges. We provide a detailed overview of publications with published code in the field, list reusable data handling tools, and provide criteria for reproducibility and reusability.
+
+---
+
+## Modeling early treatment response in AML from cell-free tumor DNA.
+
+- **Authors:** Wang D, Rausch C, Buerger SA, Tschuri S, Rothenberg-Thurley M, Schulz M, Hasenauer J, Ziemann F, Metzeler KH, Marr C
+- **Journal:** iScience
+- **Year:** 2023
+- **DOI:** 10.1016/j.isci.2023.108271
+- **PMID:** 38047080
+
+### Abstract
+
+Monitoring disease response after intensive chemotherapy for acute myeloid leukemia (AML) currently requires invasive bone marrow biopsies, imposing a significant burden on patients. In contrast, cell-free tumor DNA (ctDNA) in peripheral blood, carrying tumor-specific mutations, offers a less-invasive assessment of residual disease. However, the relationship between ctDNA levels and bone marrow blast kinetics remains unclear. We explored this in 10 AML patients with NPM1 and IDH2 mutations undergoing initial chemotherapy. Comparison of mathematical mixed-effect models showed that (1) inclusion of blast cell death in the bone marrow, (2) transition of ctDNA to peripheral blood, and (3) ctDNA decay in peripheral blood describes kinetics of blast cells and ctDNA best. The fitted model allows prediction of residual bone marrow blast content from ctDNA, and its scaling factor, representing clonal heterogeneity, correlates with relapse risk. Our study provides precise insights into blast and ctDNA kinetics, offering novel avenues for AML disease monitoring.
+
+---
+
+## Explainable machine learning for profiling the immunological synapse and functional characterization of therapeutic antibodies.
+
+- **Authors:** Shetab Boushehri S, Essig K, Chlis NK, Herter S, Bacac M, Theis FJ, Glasmacher E, Marr C, Schmich F
+- **Journal:** Nature communications
+- **Year:** 2023
+- **DOI:** 10.1038/s41467-023-43429-2
+- **PMID:** 38036503
+
+### Abstract
+
+Therapeutic antibodies are widely used to treat severe diseases. Most of them alter immune cells and act within the immunological synapse; an essential cell-to-cell interaction to direct the humoral immune response. Although many antibody designs are generated and evaluated, a high-throughput tool for systematic antibody characterization and prediction of function is lacking. Here, we introduce the first comprehensive open-source framework, scifAI (single-cell imaging flow cytometry AI), for preprocessing, feature engineering, and explainable, predictive machine learning on imaging flow cytometry (IFC) data. Additionally, we generate the largest publicly available IFC dataset of the human immunological synapse containing over 2.8 million images. Using scifAI, we analyze class frequency and morphological changes under different immune stimulation. T cell cytokine production across multiple donors and therapeutic antibodies is quantitatively predicted in vitro, linking morphological features with function and demonstrating the potential to significantly impact antibody design. scifAI is universally applicable to IFC data. Given its modular architecture, it is straightforward to incorporate into existing workflows and analysis pipelines, e.g., for rapid antibody screening and functional characterization.
+
+---
+
+## [Artificial Intelligence for computer-aided leukemia diagnostics].
+
+- **Authors:** Matek C, Marr C, von Bergwelt-Baildon M, Spiekermann K
+- **Journal:** Deutsche medizinische Wochenschrift (1946)
+- **Year:** 2023
+- **DOI:** 10.1055/a-1965-7044
+- **PMID:** 37611575
+
+### Abstract
+
+The manual examination of blood and bone marrow specimens for leukemia patients is time-consuming and limited by intra- and inter-observer variance. The development of AI algorithms for leukemia diagnostics requires high-quality sample digitization and reliable annotation of large datasets. Deep learning-based algorithms using these datasets attain human-level performance for some well-defined, clinically relevant questions such as the blast character of cells. Methods such as multiple - instance - learning allow predicting diagnoses from a collection of leukocytes, but are more data-intensive. Using "explainable AI" methods can make the prediction process more transparent and allow users to verify the algorithm's predictions. Stability and robustness analyses are necessary for routine application of these algorithms, and regulatory institutions are developing standards for this purpose. Integrated diagnostics, which link different diagnostic modalities, offer the promise of even greater accuracy but require more extensive and diverse datasets.
+
+---
+
+## Label-free imaging of 3D pluripotent stem cell differentiation dynamics on chip.
+
+- **Authors:** Atwell S, Waibel DJE, Boushehri SS, Wiedenmann S, Marr C, Meier M
+- **Journal:** Cell reports methods
+- **Year:** 2023
+- **DOI:** 10.1016/j.crmeth.2023.100523
+- **PMID:** 37533640
+
+### Abstract
+
+Massive, parallelized 3D stem cell cultures for engineering in vitro human cell types require imaging methods with high time and spatial resolution to fully exploit technological advances in cell culture technologies. Here, we introduce a large-scale integrated microfluidic chip platform for automated 3D stem cell differentiation. To fully enable dynamic high-content imaging on the chip platform, we developed a label-free deep learning method called Bright2Nuc to predict in silico nuclear staining in 3D from confocal microscopy bright-field images. Bright2Nuc was trained and applied to hundreds of 3D human induced pluripotent stem cell cultures differentiating toward definitive endoderm on a microfluidic platform. Combined with existing image analysis tools, Bright2Nuc segmented individual nuclei from bright-field images, quantified their morphological properties, predicted stem cell differentiation state, and tracked the cells over time. Our methods are available in an open-source pipeline, enabling researchers to upscale image acquisition and phenotyping of 3D cell culture.
+
+---
+
+## Progressive disruption of hematopoietic architecture from clonal hematopoiesis to MDS.
+
+- **Authors:** Buck MC, Bast L, Hecker JS, Rivière J, Rothenberg-Thurley M, Vogel L, Wang D, Andrä I, Theis FJ, Bassermann F, Metzeler KH, Oostendorp RAJ, Marr C, Götze KS
+- **Journal:** iScience
+- **Year:** 2023
+- **DOI:** 10.1016/j.isci.2023.107328
+- **PMID:** 37520699
+
+### Abstract
+
+Clonal hematopoiesis of indeterminate potential (CHIP) describes the age-related acquisition of somatic mutations in hematopoietic stem/progenitor cells (HSPC) leading to clonal blood cell expansion. Although CHIP mutations drive myeloid malignancies like myelodysplastic syndromes (MDS) it is unknown if clonal expansion is attributable to changes in cell type kinetics, or involves reorganization of the hematopoietic hierarchy. Using computational modeling we analyzed differentiation and proliferation kinetics of cultured hematopoietic stem cells (HSC) from 8 healthy individuals, 7 CHIP, and 10 MDS patients. While the standard hematopoietic hierarchy explained HSPC kinetics in healthy samples, 57% of CHIP and 70% of MDS samples were best described with alternative hierarchies. Deregulated kinetics were found at various HSPC compartments with high inter-individual heterogeneity in CHIP and MDS, while altered HSC rates were most relevant in MDS. Quantifying kinetic heterogeneity in detail, we show that reorganization of the HSPC compartment is already detectable in the premalignant CHIP state.
+
+---
+
+## RedTell: an AI tool for interpretable analysis of red blood cell morphology.
+
+- **Authors:** Sadafi A, Bordukova M, Makhro A, Navab N, Bogdanova A, Marr C
+- **Journal:** Frontiers in physiology
+- **Year:** 2023
+- **DOI:** 10.3389/fphys.2023.1058720
+- **PMID:** 37304818
+
+### Abstract
+
+Introduction: Hematologists analyze microscopic images of red blood cells to study their morphology and functionality, detect disorders and search for drugs. However, accurate analysis of a large number of red blood cells needs automated computational approaches that rely on annotated datasets, expensive computational resources, and computer science expertise. We introduce RedTell, an AI tool for the interpretable analysis of red blood cell morphology comprising four single-cell modules: segmentation, feature extraction, assistance in data annotation, and classification. Methods: Cell segmentation is performed by a trained Mask R-CNN working robustly on a wide range of datasets requiring no or minimum fine-tuning. Over 130 features that are regularly used in research are extracted for every detected red blood cell. If required, users can train task-specific, highly accurate decision tree-based classifiers to categorize cells, requiring a minimal number of annotations and providing interpretable feature importance. Results: We demonstrate RedTell's applicability and power in three case studies. In the first case study we analyze the difference of the extracted features between the cells coming from patients suffering from different diseases, in the second study we use RedTell to analyze the control samples and use the extracted features to classify cells into echinocytes, discocytes and stomatocytes and finally in the last use case we distinguish sickle cells in sickle cell disease patients. Discussion: We believe that RedTell can accelerate and standardize red blood cell research and help gain new insights into mechanisms, diagnosis, and treatment of red blood cell associated disorders.
+
+---
+
+## Wound infiltrating adipocytes are not myofibroblasts.
+
+- **Authors:** Kalgudde Gopal S, Dai R, Stefanska AM, Ansari M, Zhao J, Ramesh P, Bagnoli JW, Correa-Gallegos D, Lin Y, Christ S, Angelidis I, Lupperger V, Marr C, Davies LC, Enard W, Machens HG, Schiller HB, Jiang D, Rinkevich Y
+- **Journal:** Nature communications
+- **Year:** 2023
+- **DOI:** 10.1038/s41467-023-38591-6
+- **PMID:** 37230982
+
+### Abstract
+
+The origins of wound myofibroblasts and scar tissue remains unclear, but it is assumed to involve conversion of adipocytes into myofibroblasts. Here, we directly explore the potential plasticity of adipocytes and fibroblasts after skin injury. Using genetic lineage tracing and live imaging in explants and in wounded animals, we observe that injury induces a transient migratory state in adipocytes with vastly distinct cell migration patterns and behaviours from fibroblasts. Furthermore, migratory adipocytes, do not contribute to scar formation and remain non-fibrogenic in vitro, in vivo and upon transplantation into wounds in animals. Using single-cell and bulk transcriptomics we confirm that wound adipocytes do not convert into fibrogenic myofibroblasts. In summary, the injury-induced migratory adipocytes remain lineage-restricted and do not converge or reprogram into a fibrosing phenotype. These findings broadly impact basic and translational strategies in the regenerative medicine field, including clinical interventions for wound repair, diabetes, and fibrotic pathologies.
+
+---
+
+## Bispecific antibodies redirect synthetic agonistic receptor modified T cells against melanoma.
+
+- **Authors:** Märkl F, Benmebarek MR, Keyl J, Cadilha BL, Geiger M, Karches C, Obeck H, Schwerdtfeger M, Michaelides S, Briukhovetska D, Stock S, Jobst J, Müller PJ, Majed L, Seifert M, Klüver AK, Lorenzini T, Grünmeier R, Thomas M, Gottschlich A, Klaus R, Marr C, von Bergwelt-Baildon M, Rothenfusser S, Levesque MP, Heppt MV, Endres S, Klein C, Kobold S
+- **Journal:** Journal for immunotherapy of cancer
+- **Year:** 2023
+- **DOI:** 10.1136/jitc-2022-006436
+- **PMID:** 37208128
+
+### Abstract
+
+BACKGROUND: Melanoma is an immune sensitive disease, as demonstrated by the activity of immune check point blockade (ICB), but many patients will either not respond or relapse. More recently, tumor infiltrating lymphocyte (TIL) therapy has shown promising efficacy in melanoma treatment after ICB failure, indicating the potential of cellular therapies. However, TIL treatment comes with manufacturing limitations, product heterogeneity, as well as toxicity problems, due to the transfer of a large number of phenotypically diverse T cells. To overcome said limitations, we propose a controlled adoptive cell therapy approach, where T cells are armed with synthetic agonistic receptors (SAR) that are selectively activated by bispecific antibodies (BiAb) targeting SAR and melanoma-associated antigens.
+
+METHODS: Human as well as murine SAR constructs were generated and transduced into primary T cells. The approach was validated in murine, human and patient-derived cancer models expressing the melanoma-associated target antigens tyrosinase-related protein 1 (TYRP1) and melanoma-associated chondroitin sulfate proteoglycan (MCSP) (CSPG4). SAR T cells were functionally characterized by assessing their specific stimulation and proliferation, as well as their tumor-directed cytotoxicity, in vitro and in vivo.
+
+RESULTS: MCSP and TYRP1 expression was conserved in samples of patients with treated as well as untreated melanoma, supporting their use as melanoma-target antigens. The presence of target cells and anti-TYRP1 × anti-SAR or anti-MCSP × anti-SAR BiAb induced conditional antigen-dependent activation, proliferation of SAR T cells and targeted tumor cell lysis in all tested models. In vivo, antitumoral activity and long-term survival was mediated by the co-administration of SAR T cells and BiAb in a syngeneic tumor model and was further validated in several xenograft models, including a patient-derived xenograft model.
+
+CONCLUSION: The SAR T cell-BiAb approach delivers specific and conditional T cell activation as well as targeted tumor cell lysis in melanoma models. Modularity is a key feature for targeting melanoma and is fundamental towards personalized immunotherapies encompassing cancer heterogeneity. Because antigen expression may vary in primary melanoma tissues, we propose that a dual approach targeting two tumor-associated antigens, either simultaneously or sequentially, could avoid issues of antigen heterogeneity and deliver therapeutic benefit to patients.
+
+---
+
+## Explainable AI identifies diagnostic cells of genetic AML subtypes.
+
+- **Authors:** Hehr M, Sadafi A, Matek C, Lienemann P, Pohlkamp C, Haferlach T, Spiekermann K, Marr C
+- **Journal:** PLOS digital health
+- **Year:** 2023
+- **DOI:** 10.1371/journal.pdig.0000187
+- **PMID:** 36921004
+
+### Abstract
+
+Explainable AI is deemed essential for clinical applications as it allows rationalizing model predictions, helping to build trust between clinicians and automated decision support tools. We developed an inherently explainable AI model for the classification of acute myeloid leukemia subtypes from blood smears and found that high-attention cells identified by the model coincide with those labeled as diagnostically relevant by human experts. Based on over 80,000 single white blood cell images from digitized blood smears of 129 patients diagnosed with one of four WHO-defined genetic AML subtypes and 60 healthy controls, we trained SCEMILA, a single-cell based explainable multiple instance learning algorithm. SCEMILA could perfectly discriminate between AML patients and healthy controls and detected the APL subtype with an F1 score of 0.86±0.05 (mean±s.d., 5-fold cross-validation). Analyzing a novel multi-attention module, we confirmed that our algorithm focused with high concordance on the same AML-specific cells as human experts do. Applied to classify single cells, it is able to highlight subtype specific cells and deconvolve the composition of a patient's blood smear without the need of single-cell annotation of the training data. Our large AML genetic subtype dataset is publicly available, and an interactive online tool facilitates the exploration of data and predictions. SCEMILA enables a comparison of algorithmic and expert decision criteria and can present a detailed analysis of individual patient data, paving the way to deploy AI in the routine diagnostics for identifying hematopoietic neoplasms.
+
+---
+
+## Single-cell transcriptomic atlas-guided development of CAR-T cells for the treatment of acute myeloid leukemia.
+
+- **Authors:** Gottschlich A, Thomas M, Grünmeier R, Lesch S, Rohrbacher L, Igl V, Briukhovetska D, Benmebarek MR, Vick B, Dede S, Müller K, Xu T, Dhoqina D, Märkl F, Robinson S, Sendelhofert A, Schulz H, Umut Ö, Kavaka V, Tsiverioti CA, Carlini E, Nandi S, Strzalkowski T, Lorenzini T, Stock S, Müller PJ, Dörr J, Seifert M, Cadilha BL, Brabenec R, Röder N, Rataj F, Nüesch M, Modemann F, Wellbrock J, Fiedler W, Kellner C, Beltrán E, Herold T, Paquet D, Jeremias I, von Baumgarten L, Endres S, Subklewe M, Marr C, Kobold S
+- **Journal:** Nature biotechnology
+- **Year:** 2023
+- **DOI:** 10.1038/s41587-023-01684-0
+- **PMID:** 36914885
+
+### Abstract
+
+Chimeric antigen receptor T cells (CAR-T cells) have emerged as a powerful treatment option for individuals with B cell malignancies but have yet to achieve success in treating acute myeloid leukemia (AML) due to a lack of safe targets. Here we leveraged an atlas of publicly available RNA-sequencing data of over 500,000 single cells from 15 individuals with AML and tissue from 9 healthy individuals for prediction of target antigens that are expressed on malignant cells but lacking on healthy cells, including T cells. Aided by this high-resolution, single-cell expression approach, we computationally identify colony-stimulating factor 1 receptor and cluster of differentiation 86 as targets for CAR-T cell therapy in AML. Functional validation of these established CAR-T cells shows robust in vitro and in vivo efficacy in cell line- and human-derived AML models with minimal off-target toxicity toward relevant healthy human tissues. This provides a strong rationale for further clinical development.
+
+---
+
+## A generalizable brain extraction net (BEN) for multimodal MRI data from rodents, nonhuman primates, and humans.
+
+- **Authors:** Yu Z, Han X, Xu W, Zhang J, Marr C, Shen D, Peng T, Zhang XY, Feng J
+- **Journal:** eLife
+- **Year:** 2022
+- **DOI:** 10.7554/eLife.81217
+- **PMID:** 36546674
+
+### Abstract
+
+Accurate brain tissue extraction on magnetic resonance imaging (MRI) data is crucial for analyzing brain structure and function. While several conventional tools have been optimized to handle human brain data, there have been no generalizable methods to extract brain tissues for multimodal MRI data from rodents, nonhuman primates, and humans. Therefore, developing a flexible and generalizable method for extracting whole brain tissue across species would allow researchers to analyze and compare experiment results more efficiently. Here, we propose a domain-adaptive and semi-supervised deep neural network, named the Brain Extraction Net (BEN), to extract brain tissues across species, MRI modalities, and MR scanners. We have evaluated BEN on 18 independent datasets, including 783 rodent MRI scans, 246 nonhuman primate MRI scans, and 4601 human MRI scans, covering five species, four modalities, and six MR scanners with various magnetic field strengths. Compared to conventional toolboxes, the superiority of BEN is illustrated by its robustness, accuracy, and generalizability. Our proposed method not only provides a generalized solution for extracting brain tissue across species but also significantly improves the accuracy of atlas registration, thereby benefiting the downstream processing tasks. As a novel fully automated deep-learning method, BEN is designed as an open-source software to enable high-throughput processing of neuroimaging data across species in preclinical and clinical applications.
+
+---
+
+## SHAPR predicts 3D cell shapes from 2D microscopic images.
+
+- **Authors:** Waibel DJE, Kiermeyer N, Atwell S, Sadafi A, Meier M, Marr C
+- **Journal:** iScience
+- **Year:** 2022
+- **DOI:** 10.1016/j.isci.2022.105298
+- **PMID:** 36304119
+
+### Abstract
+
+Reconstruction of shapes and sizes of three-dimensional (3D) objects from two- dimensional (2D) information is an intensely studied subject in computer vision. We here consider the level of single cells and nuclei and present a neural network-based SHApe PRediction autoencoder. For proof-of-concept, SHAPR reconstructs 3D shapes of red blood cells from single view 2D confocal microscopy images more accurately than naïve stereological models and significantly increases the feature-based prediction of red blood cell types from F1 = 79% to F1 = 87.4%. Applied to 2D images containing spheroidal aggregates of densely grown human induced pluripotent stem cells, we find that SHAPR learns fundamental shape properties of cell nuclei and allows for prediction-based morphometry. Reducing imaging time and data storage, SHAPR will help to optimize and up-scale image-based high-throughput applications for biomedicine.
+
+---
+
+## Altered expression response upon repeated gene repression in single yeast cells.
+
+- **Authors:** Schuh L, Kukhtevich I, Bheda P, Schulz M, Bordukova M, Schneider R, Marr C
+- **Journal:** PLoS computational biology
+- **Year:** 2022
+- **DOI:** 10.1371/journal.pcbi.1010640
+- **PMID:** 36256678
+
+### Abstract
+
+Cells must continuously adjust to changing environments and, thus, have evolved mechanisms allowing them to respond to repeated stimuli. While faster gene induction upon a repeated stimulus is known as reinduction memory, responses to repeated repression have been less studied so far. Here, we studied gene repression across repeated carbon source shifts in over 1,500 single Saccharomyces cerevisiae cells. By monitoring the expression of a carbon source-responsive gene, galactokinase 1 (Gal1), and fitting a mathematical model to the single-cell data, we observed a faster response upon repeated repressions at the population level. Exploiting our single-cell data and quantitative modeling approach, we discovered that the faster response is mediated by a shortened repression response delay, the estimated time between carbon source shift and Gal1 protein production termination. Interestingly, we can exclude two alternative hypotheses, i) stronger dilution because of e.g., increased proliferation, and ii) a larger fraction of repressing cells upon repeated repressions. Collectively, our study provides a quantitative description of repression kinetics in single cells and allows us to pinpoint potential mechanisms underlying a faster response upon repeated repression. The computational results of our study can serve as the starting point for experimental follow-up studies.
+
+---
+
+## Make deep learning algorithms in computational pathology more reproducible and reusable.
+
+- **Authors:** Wagner SJ, Matek C, Shetab Boushehri S, Boxberg M, Lamm L, Sadafi A, Waibel DJE, Marr C, Peng T
+- **Journal:** Nature medicine
+- **Year:** 2022
+- **DOI:** 10.1038/s41591-022-01905-0
+- **PMID:** 35941376
+
+### Abstract
+
+(no abstract in PubMed record)
+
+---
+
+## The value of longitudinal clinical data and paired CT scans in predicting the deterioration of COVID-19 revealed by an artificial intelligence system.
+
+- **Authors:** Han X, Yu Z, Zhuo Y, Zhao B, Ren Y, Lamm L, Xue X, Feng J, Marr C, Shan F, Peng T, Zhang XY
+- **Journal:** iScience
+- **Year:** 2022
+- **DOI:** 10.1016/j.isci.2022.104227
+- **PMID:** 35434542
+
+### Abstract
+
+The respective value of clinical data and CT examinations in predicting COVID-19 progression is unclear, because the CT scans and clinical data previously used are not synchronized in time. To address this issue, we collected 119 COVID-19 patients with 341 longitudinal CT scans and paired clinical data, and we developed an AI system for the prediction of COVID-19 deterioration. By combining features extracted from CT and clinical data with our system, we can predict whether a patient will develop severe symptoms during hospitalization. Complementary to clinical data, CT examinations show significant add-on values for the prediction of COVID-19 progression in the early stage of COVID-19, especially in the 6th to 8th day after the symptom onset, indicating that this is the ideal time window for the introduction of CT examinations. We release our AI system to provide clinicians with additional assistance to optimize CT usage in the clinical workflow.
+
+---

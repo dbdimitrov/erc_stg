@@ -9,7 +9,7 @@ import sys, os, re, subprocess, pathlib
 import fitz  # PyMuPDF
 import pymupdf4llm
 
-BASE = pathlib.Path("/Users/b260-admin/Repos/erc_stg/my_manuscripts")
+BASE = pathlib.Path(__file__).resolve().parent
 MD_DIR = BASE / "markdown"
 FIG_DIR = MD_DIR / "figures"
 
